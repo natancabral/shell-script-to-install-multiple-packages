@@ -8,10 +8,13 @@ Easy to use Bash Script to Install LAMP stack on Ubuntu.
 
 ### Automatic
 
-Install wget
+Install wget on terminal
 
 ```
-sudo apt-get install wget or
+sudo apt-get install wget
+```
+or
+```
 sudo apt install wget
 ```
 
