@@ -12,9 +12,6 @@ Install wget on terminal
 
 ```
 sudo apt-get install wget
-```
-or
-```
 sudo apt install wget
 ```
 
