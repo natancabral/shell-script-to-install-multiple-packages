@@ -1,4 +1,4 @@
-# ubuntu-bash-script-config-lamp
+# Ubuntu Bash Script to Configure LAMP
 Easy to use Bash Script to Install LAMP stack on Ubuntu. 
 
 ##How to Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu.
