@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install
-# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/uninstall-mysql.sh | bash
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/uninstall-lamp.sh | bash
 
 # Color Reset
 Color_Off='\033[0m'       # Reset
