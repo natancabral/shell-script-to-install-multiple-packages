@@ -23,8 +23,6 @@ sudo apt install wget
 
 ## LAMP
 Apache, MySQL, PHP (LAMP)
-### lamp.sh
-
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/lamp.sh | bash
@@ -45,20 +43,17 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 
 ## Node.js
 Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-### nodejs.sh
-
-* Node.js
-
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/nodejs.sh | bash
 ```
 
+* Node.js
+
 ---
 
 ## React
 React – A JavaScript library for building user interfaces
-### reactjs.sh
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/reactjs.sh | bash
@@ -70,7 +65,6 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 
 ## Electron
 Electron | Build cross-platform desktop apps with JavaScript.
-### electronjs.sh
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/electronjs.sh | bash
@@ -80,17 +74,15 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 
 ---
 
-## Java
-## Spring Boot
-## Git
+## ToDo
+* Java
+* Spring Boot
+* Git
 
----
 
 ## Plus
-### personal.sh
-### domain.sh
-
-* Sample to create domain on server
+* personal.sh
+* domain.sh
 
 
 
