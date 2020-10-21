@@ -56,11 +56,21 @@ PASS_MYSQL_ROOT=`openssl rand -base64 12` # this you need to save
 PASS_PHPMYADMIN_APP=`openssl rand -base64 12` # can be random, won't be used again
 PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 
+# Check if running as root  
+if [ "$(id -u)" != "0" ]; then  
+  echo "This script must be run as root" 1>&2  
+  exit 1  
+fi  
+   
+# Ask value for mysql root password   
+read -p 'db_root_password [secretpasswd]: ' db_root_password 
+# variable : $db_root_password
+echo  
 
 update() {
 	# Update system repos
 	echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
-	sudo apt -qq update 
+	sudo apt -qq update -y
 }
 
 installApache() {
