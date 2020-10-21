@@ -26,7 +26,7 @@ Apache, MySQL, PHP (LAMP).
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/lamp.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
 ```
 
 * Apache
@@ -47,7 +47,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/nodejs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/nodejs.sh | bash
 ```
 
 * Node.js
@@ -59,7 +59,7 @@ React – A JavaScript library for building user interfaces.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/reactjs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/reactjs.sh | bash
 ```
 
 * React Js
@@ -71,7 +71,7 @@ Electron is a builder cross-platform desktop apps with JavaScript.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/electronjs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/electronjs.sh | bash
 ```
 
 * Electron Js
