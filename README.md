@@ -1,8 +1,8 @@
 # Ubuntu Bash Script 
 ## LAMP, ReacJs, Electron, Java, Spring Boot
-Easy to use Bash Script to Install LAMP stack on Ubuntu. 
+Easy to use Bash Script to Install components stack on Ubuntu. 
 
-## How to Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu.
+## How to Install on Ubuntu.
 
 Root permission, but no necessery:
 
