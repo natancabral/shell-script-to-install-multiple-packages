@@ -22,7 +22,8 @@ sudo apt install wget
 ---
 
 ## LAMP
-Apache, MySQL, PHP (LAMP)
+Apache, MySQL, PHP (LAMP).
+
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/lamp.sh | bash
@@ -42,7 +43,8 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 ---
 
 ## Node.js
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/nodejs.sh | bash
@@ -53,7 +55,8 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 ---
 
 ## React
-React – A JavaScript library for building user interfaces
+React – A JavaScript library for building user interfaces.
+
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/reactjs.sh | bash
@@ -64,7 +67,8 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 ---
 
 ## Electron
-Electron | Build cross-platform desktop apps with JavaScript.
+Electron is a builder cross-platform desktop apps with JavaScript.
+
 Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/run/electronjs.sh | bash
