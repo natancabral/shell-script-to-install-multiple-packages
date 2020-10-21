@@ -31,8 +31,8 @@ PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 
 # Check if running as root  
 if [ "$(id -u)" != "0" ]; then  
-  echo -e "\n ${Green} Try root user: sudo su -- ${Color_Off}"  
-  echo -e "\n ${Yellow} This script must be run as root ${Color_Off}" 1>&2  
+  echo -e "\n ${Yellow} This script must be run as root ${Color_Off}"
+  echo -e " ${Yellow} Try change to user root: sudo su -- ${Color_Off}" 1>&2 
   exit 1  
 fi  
 
@@ -180,12 +180,6 @@ setPermissions
 restartApache
 
 echo -e "\n${Green} SUCCESS! MySQL password is: ${PASS_MYSQL_ROOT} ${Color_Off}"
-
-# TODO
-# - [x] Figure out why it is asking for MySQL password and not just taking it from the variable in heredoc (cz: to avoid redirection, programs don't let heredoc enter passwords)
-# - [ ] Figure out a secure way for entering MySQL password (where it isn't shown on command prompt and saved in bash history as a result)
-# - [ ] Prompt or indicate somehow that MySQL password won't be overwritten if already set
-# - [ ] Email password (or add it to MOTD)
 
 # LINKS
 # https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/
