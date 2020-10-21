@@ -24,3 +24,17 @@ sudo apt-get autoclean
 sudo apt-get remove dbconfig-mysql
 sudo apt-get dist-upgrade
 # sudo apt-get install mysql-server
+
+# remove phpmyadmin
+sudo apt-get purge phpmyadmin #or
+sudo apt-get remove phpmyadmin
+
+# remove php
+sudo apt-get purge php.*
+
+# remove apache2
+sudo service apache2 stop
+sudo apt-get remove apache2*
+sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+sudo apt-get autoremove
+
