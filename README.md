@@ -1,7 +1,5 @@
 # Ubuntu Bash Script 
-## LAMP, ReacJs, Electron, Java, Spring Boot
 Easy to use Bash Script to Install components stack on Ubuntu. 
-
 ## How to Install on Ubuntu.
 
 Root permission, but no necessery:
@@ -82,8 +80,14 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 
 ---
 
-## Plus
+## Java
+## Spring Boot
+## Git
 
+---
+
+## Plus
+### personal.sh
 ### domain.sh
 
 * Sample to create domain on server
