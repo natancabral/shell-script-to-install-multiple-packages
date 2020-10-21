@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/nodejs.sh | bash
+
 uninstall_node () {
   echo -e "\n\n Removig existing Nodejs, if any .."
   # apt packages
