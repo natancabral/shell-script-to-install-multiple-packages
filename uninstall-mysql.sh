@@ -16,25 +16,28 @@ Cyan='\033[0;36m'         # Cyan
 
 # Uninstall Mysql
 echo -e "\n ${Purple} Uninstall MySql.. ${Color_Off}"
-
 sudo apt-get remove --purge mysql*
 sudo apt-get purge mysql*
-sudo apt-get autoremove
-sudo apt-get autoclean
 sudo apt-get remove dbconfig-mysql
-sudo apt-get dist-upgrade
-# sudo apt-get install mysql-server
 
 # remove phpmyadmin
+echo -e "\n ${Purple} Uninstall PhpMyAdmin.. ${Color_Off}"
 sudo apt-get purge phpmyadmin #or
 sudo apt-get remove phpmyadmin
 
 # remove php
+echo -e "\n ${Purple} Uninstall Php.. ${Color_Off}"
 sudo apt-get purge php.*
 
 # remove apache2
+echo -e "\n ${Purple} Uninstall Apache 2.. ${Color_Off}"
 sudo service apache2 stop
 sudo apt-get remove apache2*
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+
+# update
+echo -e "\n ${Purple} Auto Clean.. ${Color_Off}"
 sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get dist-upgrade
 
