@@ -171,6 +171,7 @@ restartApache() {
 	# Restart Apache
 	echo -e "\n ${Cyan} Restarting Apache.. ${Color_Off}"
 	sudo service apache2 restart
+	sudo systemctl restart apache2
 }
 
 # RUN
