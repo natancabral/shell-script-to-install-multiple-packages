@@ -24,10 +24,14 @@ echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
 sudo snap install keepassxc
 
 # MS Code
+echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
 sudo snap install --classic code # or code-insiders
 # import the Microsoft GPG key using the following
+echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
+echo -e "\n ${Green} Key.. ${Color_Off}"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 # enable the Visual Studio Code repository by typing: 
+echo -e "\n ${Green} Download Code.. ${Color_Off}"
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
 sudo apt install code
