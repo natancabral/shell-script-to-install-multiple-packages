@@ -58,7 +58,7 @@ PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 
 # Check if running as root  
 if [ "$(id -u)" != "0" ]; then  
-  echo "This script must be run as root" 1>&2  
+  echo -e "\n ${Yellow} This script must be run as root ${Color_Off}" 1>&2  
   exit 1  
 fi  
    
