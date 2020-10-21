@@ -31,14 +31,12 @@ PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 
 # Check if running as root  
 if [ "$(id -u)" != "0" ]; then  
+  echo -e "\n ${Green} Try root user: sudo su -- ${Color_Off}"  
   echo -e "\n ${Yellow} This script must be run as root ${Color_Off}" 1>&2  
   exit 1  
 fi  
-   
-# Ask value for mysql root password   
-read -p 'db_root_password [secretpasswd]: ' db_root_password 
-# variable : $db_root_password
-echo  
+
+exit 1  
 
 # Time Sleep 2seg
 sleep 2
