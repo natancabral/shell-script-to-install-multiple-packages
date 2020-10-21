@@ -9,6 +9,9 @@
 #                 Nothing will be re-installed except for the packages with errors.
 ###################################################################
 
+# Install
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/lamp.sh | bash
+
 # Time Sleep 2seg
 sleep 2
 
