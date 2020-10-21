@@ -12,36 +12,6 @@
 # Install
 # wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/lamp.sh | bash
 
-# Time Sleep 2seg
-sleep 2
-
-# Update Package Index
-sudo apt update
-
-# Install Apache2, MySQL, PHP
-sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php php-cli
-
-# Allow to run Apache on boot up
-sudo systemctl enable apache2
-
-# Restart Apache Web Server
-sudo systemctl start apache2
-
-# Adjust Firewall
-sudo ufw allow in "Apache Full"
-
-# Allow Read/Write for Owner
-sudo chmod -R 0755 /var/www/html/
-
-# Create info.php for testing php processing
-sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
-
-# Open localhost in the default browser
-xdg-open "http://localhost"
-xdg-open "http://localhost/info.php"
-
-# --------------------------------------
-
 # Color Reset
 Color_Off='\033[0m'       # Reset
 
@@ -62,7 +32,7 @@ PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 # Check if running as root  
 if [ "$(id -u)" != "0" ]; then  
   echo -e "\n ${Yellow} This script must be run as root ${Color_Off}" 1>&2  
-  # exit 1  
+  exit 1  
 fi  
    
 # Ask value for mysql root password   
@@ -70,10 +40,32 @@ read -p 'db_root_password [secretpasswd]: ' db_root_password
 # variable : $db_root_password
 echo  
 
+# Time Sleep 2seg
+sleep 2
+# Update Package Index
+sudo apt update
+# Install Apache2, MySQL, PHP
+sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php php-cli
+# Allow to run Apache on boot up
+sudo systemctl enable apache2
+# Restart Apache Web Server
+sudo systemctl start apache2
+# Adjust Firewall
+sudo ufw allow in "Apache Full"
+# Allow Read/Write for Owner
+sudo chmod -R 0755 /var/www/html/
+# Create info.php for testing php processing
+sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
+# Open localhost in the default browser
+xdg-open "http://localhost"
+xdg-open "http://localhost/info.php"
+
+
 update() {
 	# Update system repos
 	echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
 	sudo apt -qq update -y
+	sudo apt list --upgradable
 }
 
 installApache() {
