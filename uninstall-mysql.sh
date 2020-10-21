@@ -15,28 +15,30 @@ Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 
 # Uninstall Mysql
-echo -e "\n ${Purple} Uninstall MySql.. ${Color_Off}"
+echo -e "\n ${Yellow} Uninstall MySql.. ${Color_Off}"
 sudo apt-get remove --purge mysql*
+echo -e "\n ${Yellow} Uninstall MySql (2).. ${Color_Off}"
 sudo apt-get purge mysql*
-sudo apt-get remove dbconfig-mysql
+echo -e "\n ${Yellow} Uninstall MySql (3).. ${Color_Off}"
+#sudo apt-get remove dbconfig-mysql
 
 # remove phpmyadmin
-echo -e "\n ${Purple} Uninstall PhpMyAdmin.. ${Color_Off}"
+echo -e "\n ${Yellow} Uninstall PhpMyAdmin.. ${Color_Off}"
 sudo apt-get purge phpmyadmin #or
 sudo apt-get remove phpmyadmin
 
 # remove php
-echo -e "\n ${Purple} Uninstall Php.. ${Color_Off}"
+echo -e "\n ${Yellow} Uninstall Php.. ${Color_Off}"
 sudo apt-get purge php.*
 
 # remove apache2
-echo -e "\n ${Purple} Uninstall Apache 2.. ${Color_Off}"
+echo -e "\n ${Yellow} Uninstall Apache 2.. ${Color_Off}"
 sudo service apache2 stop
 sudo apt-get remove apache2*
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
 
 # update
-echo -e "\n ${Purple} Auto Clean.. ${Color_Off}"
+echo -e "\n ${Yellow} Auto Clean.. ${Color_Off}"
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get dist-upgrade
