@@ -22,12 +22,18 @@ sudo apt install software-properties-common apt-transport-https wget
 # Faster Open Apps - Preload on RAM
 sudo apt install preload
 
+# Install SNAP
+sudo apt install snapd
+
 # Git
 sudo apt install git
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
 sudo snap install keepassxc
+
+# VLC
+sudo snap install vlc
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
