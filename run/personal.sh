@@ -24,6 +24,12 @@ sudo apt -qq update
 # --assume-yes - yes to all
 # $ sudo apt -y install [package]
 
+# Remove App
+# sudo apt-get remove --purge [package] 
+# Run these commands to delete all words and settings:
+# sudo rm ~/"[package-word]" -Rf
+# sudo rm ~/.config/[package-word]/ -Rf
+
 # Install FLATPAK
 # sudo apt install flatpak
 
