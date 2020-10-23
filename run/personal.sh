@@ -19,11 +19,14 @@ echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
 sudo apt -qq update 
 sudo apt install software-properties-common apt-transport-https wget
 
-# Faster Open Apps - Preload on RAM
-sudo apt install preload
+# Install FLATPAK
+sudo apt install flatpak
 
 # Install SNAP
 sudo apt install snapd
+
+# Faster Open Apps - Preload on RAM
+sudo apt install preload
 
 # Git
 sudo apt install git
@@ -34,6 +37,17 @@ sudo snap install keepassxc
 
 # VLC
 sudo snap install vlc
+
+# Gnome Boxes Virtual Machine
+sudo apt install gnome-boxes
+# sudo flatpak install flathub org.gnome.Boxes
+# ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
+# $ sudo rm /var/lib/apt/lists/lock
+# $ sudo rm /var/cache/apt/archives/lock
+# $ sudo rm /var/lib/dpkg/lock
+
+# Virtual Box Machine
+sudo apt-get install virtualbox
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
