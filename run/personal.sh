@@ -20,7 +20,7 @@ sudo apt -qq update
 sudo apt install software-properties-common apt-transport-https wget
 
 # Install FLATPAK
-sudo apt install flatpak
+# sudo apt install flatpak
 
 # Install SNAP
 sudo apt install snapd
@@ -47,7 +47,7 @@ sudo apt install gnome-boxes
 # $ sudo rm /var/lib/dpkg/lock
 
 # Virtual Box Machine
-sudo apt-get install virtualbox
+# sudo apt-get install virtualbox
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
