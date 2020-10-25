@@ -94,6 +94,7 @@ sudo snap install nodejs -y
 
 # Passo 3. Mais tarde, se você precisar atualizar o programa, use:
 sudo snap refresh node
+sudo npm i npm@latest -g
 
 # Passo 4. Depois, se for necessário, desinstale o programa, usando o comando abaixo;
 # sudo snap remove node
