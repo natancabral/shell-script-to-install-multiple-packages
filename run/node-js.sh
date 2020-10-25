@@ -87,6 +87,11 @@ sudo apt remove -y npm
 # rm -rf /tmp/node_latest_armhf.deb
 # sudo apt autoremove -y
 
+# First, you'll need NodeJS and NPM:
+echo -e "${Color_Cyan}Run bash setup Node.js 9.x .. ${Color_Off}"
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+
 echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
 # sudo snap install node --classic --channel=9/stable -y
 sudo apt install node -y 
