@@ -52,14 +52,13 @@ echo -e "\n\n ----- NVM has been installed. run 'source ~/.bashrc' to use it rig
 
 # ---------------
 
-nodeVersion=`node -v`
-
 Color_Off='\033[0m'
 Color_Red='\033[0;31m'
 Color_Green='\033[0;32m'
 Color_Blue='\033[0;34m'
 Color_Cyan='\033[0;36m'
 
+nodeVersion=`node -v`
 echo -e "Current Node version is ${Color_Cyan}${nodeVersion}${Color_Off}"
 
 # remove existing
@@ -99,6 +98,7 @@ sudo snap refresh node
 # sudo snap remove node
 
 # confirm version
+nodeVersion=`node -v`
 echo -e "
 ${Color_Green}Successfully installed. Node.js version is: ${nodeVersion} 
 ${Color_Off}"
