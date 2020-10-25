@@ -43,7 +43,9 @@ update() {
   # Update system repos
   echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
   sudo apt -qq update -y
+  sudo apt --fix-broken install --yes
   sudo apt list --upgradable
+  # sudo apt upgrade # upgrade to new versions
 }
 
 installApache() {
