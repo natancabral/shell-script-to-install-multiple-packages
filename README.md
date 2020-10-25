@@ -47,7 +47,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/nodejs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js.sh | bash
 ```
 
 * Node.js
