@@ -42,6 +42,9 @@ sudo apt -y install preload
 # Git
 sudo apt -y install git
 
+# GNOME packages
+sudo apt install gnome-packagekit
+
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
 sudo snap -y install keepassxc
