@@ -10,16 +10,16 @@ sudo apt-get install -y nodejs
 nodejs -v
 
 # Then you can install react-native using `npm`
-sudo npm install -g react-native-cli
+sudo npm install -g react-native-cli -y
 
 # Now you need to install Java/ Android
-sudo apt-get install default-jre
-sudo apt-get install default-jdk
+sudo apt-get install default-jre -y
+sudo apt-get install default-jdk -y
 
 # Java
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-installer -y
 
 # Install Android
 # Install Android SDK requirements
