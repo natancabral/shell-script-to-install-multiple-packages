@@ -31,19 +31,18 @@ unzip sdk-tools-linux-3859397.zip
 
 # We add the path of our Android SDK tools to .bashrc so that we have access to the Android tools.
 cd ~
-pico .bashrc
-
+# ----------------------------------------------------------------- .bashrc
+#pico .bashrc
 # Add these lines to the top of the file
-export PATH=${PATH}:~/android-sdk/tools
-export PATH=${PATH}:~/android-sdk/platform-tools
-
+#export PATH=${PATH}:~/android-sdk/tools
+#export PATH=${PATH}:~/android-sdk/platform-tools
 # CTRL+O (uppcase o) to save
 # CTRL+X to exit
-
-source ~/.bashrc
+# ----------------------------------------------------------------- .bashrc
+echo $'export PATH=${PATH}:~/android-sdk/tools \nexport PATH=${PATH}:~/android-sdk/platform-tools \n' > .bashrc
+#source ~/.bashrc
 
 # Now we have access to the android command
-
 android update sdk --no-ui
 # Answer 'y' to all prompts
 
