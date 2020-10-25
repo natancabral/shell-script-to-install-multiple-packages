@@ -59,7 +59,7 @@ React – A JavaScript library for building user interfaces.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/reactjs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/react-js.sh | bash
 ```
 
 * React Js
@@ -71,7 +71,7 @@ Electron is a builder cross-platform desktop apps with JavaScript.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/electronjs.sh | bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/electron.sh | bash
 ```
 
 * Electron Js
