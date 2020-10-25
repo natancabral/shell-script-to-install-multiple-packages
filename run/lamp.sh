@@ -177,6 +177,7 @@ enableMods
 setPermissions
 restartApache
 createFileAndOpenBrowser
+update
 
 echo -e "\n${Green} SUCCESS! MySQL password is: ${PASS_MYSQL_ROOT} ${Color_Off}"
 
