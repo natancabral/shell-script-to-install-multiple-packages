@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Install
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/react-native.sh | bash
+
 # First, you'll need NodeJS and NPM:
 sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
