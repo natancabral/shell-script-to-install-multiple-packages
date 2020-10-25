@@ -31,10 +31,11 @@ sudo apt -qq update
 # sudo rm ~/.config/[package-word]/ -Rf
 
 # Install FLATPAK
-# sudo apt install flatpak
+sudo apt -y install flatpak
 
 # Install SNAP
 sudo apt -y install snapd
+sudo apt -y install snap
 
 # Faster Open Apps - Preload on RAM
 sudo apt -y install preload
@@ -43,7 +44,8 @@ sudo apt -y install preload
 sudo apt -y install git
 
 # GNOME packages
-sudo apt install gnome-packagekit
+sudo apt install gnome-packagekit -y
+gpk-application
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
