@@ -88,7 +88,8 @@ sudo apt remove -y npm
 # sudo apt autoremove -y
 
 echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
-sudo snap install node --classic --channel=9/stable
+sudo snap install node --classic --channel=9/stable -y
+sudo snap install nodejs -y 
 # sudo snap install node --classic --channel=edge # last version
 
 # Passo 3. Mais tarde, se você precisar atualizar o programa, use:
