@@ -43,6 +43,9 @@ sudo apt -y install preload
 # Git
 sudo apt -y install git
 
+# cUrl
+sudo apt -y install curl
+
 # GNOME packages
 sudo apt install gnome-packagekit -y
 gpk-application
