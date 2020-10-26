@@ -14,7 +14,7 @@ Blue='\033[0;34m'         # Blue
 Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 
-remove_nodejs() {
+removeNodejs() {
 
   nodeVersion=`node -v`
   echo -e "\n ${Cyan} Current Node version is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
@@ -47,7 +47,7 @@ remove_nodejs() {
   echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n  Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
 }
 
-install_nvm() {
+installNvm() {
 
   echo -e "\n ${Cyan} Installing NVM (Node Version Manager, manage multiple versions nodejs).. ${Color_Off}"
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
@@ -74,7 +74,7 @@ install_nvm() {
   #exit 0
 }
 
-install_nodejs() {
+installNodejs() {
 
   # install latest
   # echo -e "
@@ -111,9 +111,9 @@ install_nodejs() {
   # sudo snap remove node
 }
 
-remove_nodejs
-install_nvm
-install_nodejs
+removeNodejs
+installNvm
+installNodejs
 
 # confirm version
 nodeVersion=`node -v`
