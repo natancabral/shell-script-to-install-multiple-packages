@@ -22,18 +22,18 @@ remove_nodejs() {
 
   echo -e "\n ${Cyan} Removing Node ... ${Color_Off}"
   # snap packages
-  sudo snap remove node npm -y
-  sudo apt remove node npm -y
-  sudo apt purge --auto-remove nodejs npm -y
+  sudo snap remove node npm
+  sudo apt remove node npm
+  sudo apt purge --auto-remove nodejs npm 
   
   echo -e "\n ${Cyan} Removing Nodejs ... ${Color_Off}"
-  sudo snap remove nodejs -y
-  sudo apt remove nodejs -y
+  sudo snap remove nodejs
+  sudo apt remove nodejs
   
   echo -e "\n ${Cyan} Removing source ... ${Color_Off}"
   # remove node source from /etc/apt/sources.list.d
-  sudo rm -rf /etc/apt/sources.list.d/nodesource.list -y
-  sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save -y
+  sudo rm -rf /etc/apt/sources.list.d/nodesource.list
+  sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
 
   echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
 
