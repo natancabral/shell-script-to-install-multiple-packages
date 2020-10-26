@@ -98,6 +98,9 @@ installNodejs() {
   echo -e "\n ${Cyan} Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
   sudo apt install nodejs -y 
   sudo apt install node -y 
+  
+  nodeVersion=`node -v`
+  echo -e "\n ${Cyan} Node version installed is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
 
   # sudo snap install node --classic --channel=9/stable -y
   # sudo snap install node --classic --channel=edge # last version
