@@ -53,8 +53,6 @@ remove_nodejs() {
   echo -e "\n ${Cyan} Removing npm... ${Color_Off}"
   sudo apt remove -y npm
 
-  # update
-  sudo apt update
 }
 
 install_nvm () {
@@ -129,6 +127,9 @@ install_nodejs
 nodeVersion=`node -v`
 echo -e "
 ${Color_Green}Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
+
+# update
+sudo apt update
 
 # TODO
 # CHECK IF NODE IS INSTALLED BEFORE TRYING TO REMOVE IT
