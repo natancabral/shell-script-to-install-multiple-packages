@@ -62,7 +62,7 @@ installNvm() {
 
   # install the node versions
   # nvm install node # install Latest
-  #nvm install --lts # install LTS version
+  # nvm install --lts # install LTS version
 
   # select the version you want to use
   # nvm use node # use Latest
@@ -71,23 +71,10 @@ installNvm() {
   # installing a version for the first time also uses and sets it as default
 
   # exit successfully
-  #exit 0
+  # exit 0
 }
 
 installNodejs() {
-
-  # install latest
-  # echo -e "
-  # ${Color_Cyan}Downloading latest Node.js ARM-version.. ${Color_Off}"
-  # cd /tmp/
-  # wget https://node-arm.herokuapp.com/node_latest_armhf.deb
-  # echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
-  # sudo dpkg -i node_latest_armhf.deb
-  # cleanup
-  # echo -e "
-  # ${Color_Cyan}Cleaning up .. ${Color_Off}"
-  # rm -rf /tmp/node_latest_armhf.deb
-  # sudo apt autoremove -y
 
   # First, you'll need NodeJS and NPM:
   echo -e "\n ${Cyan} Run bash setup Node.js 12.x .. ${Color_Off}"
@@ -127,7 +114,6 @@ echo -e "\n ${Green} Successfully installed. Node.js version is: ${nodeVersion} 
 sudo apt update
 
 # TODO
-# CHECK IF NODE IS INSTALLED BEFORE TRYING TO REMOVE IT
 # Check if the bash profile is called `.bashrc` (Ubuntu) or `.bash_profile` (macOS)
 
 # FONT
