@@ -31,7 +31,10 @@ remove_nodejs() {
   sudo snap remove nodejs --force-yes --yes
   sudo apt remove nodejs --force-yes --yes
   sudo snap remove npm --force-yes --yes
-  sudo apt remove npm --force-yes --yes
+  sudo apt remove npm 
+
+  echo -e "\n ${Cyan} Removing Node-Legacy... ${Color_Off}"
+  sudo apt remove -y node npm nodejs nodered nodejs-legacy --force-yes --yes
 
   echo -e "\n ${Cyan} Force AutoRemove... ${Color_Off}"
   sudo apt autoremove --force-yes --yes
@@ -42,19 +45,9 @@ remove_nodejs() {
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
 
   echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n  Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
-
-  # remove existing
-  echo -e "\n ${Cyan} Removing Node-RED.. ${Color_Off}"
-  sudo apt remove -y nodered
-
-  echo -e "\n ${Cyan} Removing Node.js nodejs-legacy... ${Color_Off}"
-  sudo apt remove -y nodejs nodejs-legacy
-
-  echo -e "\n ${Cyan} Removing npm... ${Color_Off}"
-  sudo apt remove -y npm
 }
 
-install_nvm () {
+install_nvm() {
 
   echo -e "\n ${Cyan} Installing NVM (Node Version Manager, manage multiple versions nodejs).. ${Color_Off}"
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
@@ -124,8 +117,7 @@ install_nodejs
 
 # confirm version
 nodeVersion=`node -v`
-echo -e "
-${Color_Green}Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
+echo -e "\n ${Green} Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
 
 # update
 sudo apt update
