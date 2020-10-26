@@ -17,20 +17,18 @@ Cyan='\033[0;36m'         # Cyan
 remove_nodejs() {
 
   nodeVersion=`node -v`
-  echo -e "\n Current Node version is ${Color_Cyan}${nodeVersion}${Color_Off}"
+  echo -e "\n ${Cyan} Current Node version is ${Color_Off}"
+  echo -e "${Green}${nodeVersion}${Color_Off}"
 
-  # First, you'll need NodeJS and NPM:
-  echo -e "\n ${Cyan} Removig existing Nodejs, if any.. ${Color_Off}"
-  
   echo -e "\n ${Color_Cyan} Removing Node.js on APT and SNAP... ${Color_Off}"
   # snap packages
-  sudo snap remove node npm
-  sudo apt remove node npm
-  sudo apt purge --auto-remove nodejs npm
+  sudo snap remove node npm -y
+  sudo apt remove node npm -y
+  sudo apt purge --auto-remove nodejs npm -y
   
   # remove node source from /etc/apt/sources.list.d
-  sudo rm -rf /etc/apt/sources.list.d/nodesource.list
-  sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
+  sudo rm -rf /etc/apt/sources.list.d/nodesource.list -y
+  sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save -y
 
   echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
 
