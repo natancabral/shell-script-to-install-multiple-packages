@@ -32,25 +32,25 @@ sudo apt-get install default-jre -y
 sudo apt-get install default-jdk -y
 
 # Java
-echo -e "\n ${Cyan} Apt-Get PPA WEBUPDATE8JAVA.. ${Color_Off}"
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-echo -e "\n ${Cyan} Install Java-8.. ${Color_Off}"
-sudo apt-get -y install oracle-java8-installer
+# echo -e "\n ${Cyan} Apt-Get PPA WEBUPDATE8JAVA.. ${Color_Off}"
+# sudo add-apt-repository ppa:webupd8team/java
+# sudo apt-get update
+# echo -e "\n ${Cyan} Install Java-8.. ${Color_Off}"
+# sudo apt-get -y install oracle-java8-installer
 
 # Install Android
 # Install Android SDK requirements
-echo -e "\n ${Cyan} Install Android.. ${Color_Off}"
-cd ~
-mkdir android-sdk
-cd android-sdk
-echo -e "\n ${Cyan} Install Android SDK.. ${Color_Off}"
-https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
-unzip sdk-tools-linux-3859397.zip
+# echo -e "\n ${Cyan} Install Android.. ${Color_Off}"
+# cd ~
+# mkdir android-sdk
+# cd android-sdk
+# echo -e "\n ${Cyan} Install Android SDK.. ${Color_Off}"
+# https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+# unzip sdk-tools-linux-3859397.zip
 
 # We add the path of our Android SDK tools to .bashrc so that we have access to the Android tools.
-echo -e "\n ${Cyan} Create .bashrc file.. ${Color_Off}"
-cd ~
+# echo -e "\n ${Cyan} Create .bashrc file.. ${Color_Off}"
+# cd ~
 # ----------------------------------------------------------------- .bashrc
 #pico .bashrc
 # Add these lines to the top of the file
@@ -59,24 +59,24 @@ cd ~
 # CTRL+O (uppcase o) to save
 # CTRL+X to exit
 # ----------------------------------------------------------------- .bashrc
-echo $'export PATH=${PATH}:~/android-sdk/tools \nexport PATH=${PATH}:~/android-sdk/platform-tools \n' > .bashrc
+# echo $'export PATH=${PATH}:~/android-sdk/tools \nexport PATH=${PATH}:~/android-sdk/platform-tools \n' > .bashrc
 #source ~/.bashrc
 
 # Now we have access to the android command
-echo -e "\n ${Cyan} Andriod access command.. ${Color_Off}"
-android update sdk --no-ui
+# echo -e "\n ${Cyan} Andriod access command.. ${Color_Off}"
+# android update sdk --no-ui
 # Answer 'y' to all prompts
 
-echo -e "\n ${Cyan} SDK Manager.. ${Color_Off}"
-sdkmanager "platforms;android-23" "build-tools;23.0.1" "add-ons;addon-google_apis-google-23"
+# echo -e "\n ${Cyan} SDK Manager.. ${Color_Off}"
+# sdkmanager "platforms;android-23" "build-tools;23.0.1" "add-ons;addon-google_apis-google-23"
 
 
 # TODO: Install GenyMotion
 # TODO: Get a project running
 
-echo -e "\n ${Cyan} Create Project.. ${Color_Off}"
+# echo -e "\n ${Cyan} Create Project.. ${Color_Off}"
 # Create your first project!
-mkdir projects
-cd projects
-react-native init my-first-project
-cd my-first-project
+# mkdir projects
+# cd projects
+# react-native init my-first-project
+# cd my-first-project
