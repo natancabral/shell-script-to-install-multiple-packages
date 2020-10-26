@@ -26,18 +26,18 @@ removeNodejs() {
   # sudo apt purge --auto-remove nodejs npm --force-yes
   
   echo -e "\n ${Cyan} Removing Nodejs --force-yes... ${Color_Off}"
-  sudo snap remove node --allow --yes
-  sudo apt remove node --allow --yes
-  sudo snap remove nodejs --allow --yes
-  sudo apt remove nodejs --allow --yes
-  sudo snap remove npm --allow --yes
-  sudo apt remove npm --allow --yes
+  sudo snap remove node -y
+  sudo apt remove node -y
+  sudo snap remove nodejs -y
+  sudo apt remove nodejs -y
+  sudo snap remove npm -y
+  sudo apt remove npm -y
 
   echo -e "\n ${Cyan} Removing Node-Legacy... ${Color_Off}"
-  sudo apt remove -y node npm nodejs nodered nodejs-legacy --allow --yes
+  sudo apt remove -y node npm nodejs nodered nodejs-legacy -y
 
   echo -e "\n ${Cyan} Force AutoRemove... ${Color_Off}"
-  sudo apt autoremove --allow --yes
+  sudo apt autoremove -y
 
   echo -e "\n ${Cyan} Removing source ... ${Color_Off}"
   # remove node source from /etc/apt/sources.list.d
