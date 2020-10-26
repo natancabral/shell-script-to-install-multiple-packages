@@ -52,7 +52,6 @@ remove_nodejs() {
 
   echo -e "\n ${Cyan} Removing npm... ${Color_Off}"
   sudo apt remove -y npm
-
 }
 
 install_nvm () {
