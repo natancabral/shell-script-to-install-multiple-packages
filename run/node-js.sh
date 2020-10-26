@@ -41,7 +41,7 @@ remove_nodejs() {
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
 
-  echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
+  echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n  Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
 
   # remove existing
   echo -e "\n ${Cyan} Removing Node-RED.. ${Color_Off}"
