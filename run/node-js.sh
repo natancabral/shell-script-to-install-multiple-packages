@@ -90,19 +90,20 @@ installNodejs() {
   # sudo apt autoremove -y
 
   # First, you'll need NodeJS and NPM:
-  echo -e "${Cyan}Run bash setup Node.js 12.x .. ${Color_Off}"
+  echo -e "\n ${Cyan} Run bash setup Node.js 12.x .. ${Color_Off}"
+  echo -e "\n ${Cyan} https://github.com/nodesource/distributions/blob/master/README.md ${Color_Off}"  
+  # Using Ubuntu
   sudo apt install curl
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-
-  echo -e "${Cyan}Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
-  # sudo snap install node --classic --channel=9/stable -y
-  sudo apt install node -y 
+  echo -e "\n ${Cyan} Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
   sudo apt install nodejs -y 
-  sudo apt install nodered -y 
+  sudo apt install node -y 
+
+  # sudo snap install node --classic --channel=9/stable -y
   # sudo snap install node --classic --channel=edge # last version
 
   # Passo 3. Mais tarde, se você precisar atualizar o programa, use:
-  sudo snap refresh node
+  # sudo snap refresh node
   sudo npm i npm@latest -g
   sudo apt dist-upgrade node -y
   sudo apt dist-upgrade nodejs -y
