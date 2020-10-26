@@ -3,25 +3,56 @@
 # Install
 # wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/node-js.sh | bash
 
-uninstall_node () {
-  echo -e "\n\n Removig existing Nodejs, if any .."
-  # apt packages
-  sudo apt purge --auto-remove nodejs npm
+# Color Reset
+Color_Off='\033[0m'       # Reset
+
+# Regular Colors
+Red='\033[0;31m'          # Red
+Green='\033[0;32m'        # Green
+Yellow='\033[0;33m'       # Yellow
+Blue='\033[0;34m'         # Blue
+Purple='\033[0;35m'       # Purple
+Cyan='\033[0;36m'         # Cyan
+
+remove_nodejs() {
+
+  nodeVersion=`node -v`
+  echo -e "\n Current Node version is ${Color_Cyan}${nodeVersion}${Color_Off}"
+
+  # First, you'll need NodeJS and NPM:
+  echo -e "\n ${Cyan} Removig existing Nodejs, if any.. ${Color_Off}"
   
+  echo -e "\n ${Color_Cyan} Removing Node.js on APT and SNAP... ${Color_Off}"
   # snap packages
   sudo snap remove node npm
-
+  sudo apt remove node npm
+  sudo apt purge --auto-remove nodejs npm
+  
   # remove node source from /etc/apt/sources.list.d
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
+
+  echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
+
+  # remove existing
+  echo -e "\n ${Color_Cyan} Removing Node-RED.. ${Color_Off}"
+  sudo apt remove -y nodered
+
+  echo -e "\n ${Color_Cyan} Removing Node.js nodejs-legacy... ${Color_Off}"
+  sudo apt remove -y nodejs nodejs-legacy
+
+  echo -e "\n ${Color_Cyan} Removing npm... ${Color_Off}"
+  sudo apt remove -y npm
 
   # update
   sudo apt update
 }
 
 install_nvm () {
-  echo -e "\n\n ----- Installing NVM (Node Version Manager) .."
+
+  echo -e "\n ${Cyan} Installing NVM (Node Version Manager, manage multiple versions nodejs).. ${Color_Off}"
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
+  sudo apt install npm -y
 
   # make sure the source lines added to `~/.bashrc` are loaded in current terminal
   # otherwise the rest of the script will give a 'nvm: command not found' error
@@ -44,75 +75,51 @@ install_nvm () {
   #exit 0
 }
 
-# uninstall_node
+install_nodejs() {
+
+  # install latest
+  # echo -e "
+  # ${Color_Cyan}Downloading latest Node.js ARM-version.. ${Color_Off}"
+  # cd /tmp/
+  # wget https://node-arm.herokuapp.com/node_latest_armhf.deb
+  # echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
+  # sudo dpkg -i node_latest_armhf.deb
+  # cleanup
+  # echo -e "
+  # ${Color_Cyan}Cleaning up .. ${Color_Off}"
+  # rm -rf /tmp/node_latest_armhf.deb
+  # sudo apt autoremove -y
+
+  # First, you'll need NodeJS and NPM:
+  echo -e "${Color_Cyan}Run bash setup Node.js 12.x .. ${Color_Off}"
+  sudo apt install curl
+  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+  echo -e "${Color_Cyan}Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
+  # sudo snap install node --classic --channel=9/stable -y
+  sudo apt install node -y 
+  sudo apt install nodejs -y 
+  sudo apt install nodered -y 
+  # sudo snap install node --classic --channel=edge # last version
+
+  # Passo 3. Mais tarde, se você precisar atualizar o programa, use:
+  sudo snap refresh node
+  sudo npm i npm@latest -g
+  sudo apt dist-upgrade node -y
+  sudo apt dist-upgrade nodejs -y
+
+  # Passo 4. Depois, se for necessário, desinstale o programa, usando o comando abaixo;
+  # sudo snap remove node
+}
+
+remove_nodejs
 install_nvm
-
-echo -e "\n\n ----- NVM has been installed. run 'source ~/.bashrc' to use it right away. 
- ----- Use 'nvm install --lts' to install and use LTS version of Node"
-
-# ---------------
-
-Color_Off='\033[0m'
-Color_Red='\033[0;31m'
-Color_Green='\033[0;32m'
-Color_Blue='\033[0;34m'
-Color_Cyan='\033[0;36m'
-
-nodeVersion=`node -v`
-echo -e "Current Node version is ${Color_Cyan}${nodeVersion}${Color_Off}"
-
-# remove existing
-echo -e "
-${Color_Cyan}Removing Node-RED.. ${Color_Off}"
-sudo apt remove -y nodered
-
-echo -e "
-${Color_Cyan}Removing Node.js... ${Color_Off}"
-sudo apt remove -y nodejs nodejs-legacy
-
-echo -e "
-${Color_Cyan}Removing npm... ${Color_Off}"
-sudo apt remove -y npm
-
-# install latest
-# echo -e "
-# ${Color_Cyan}Downloading latest Node.js ARM-version.. ${Color_Off}"
-# cd /tmp/
-# wget https://node-arm.herokuapp.com/node_latest_armhf.deb
-# echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
-# sudo dpkg -i node_latest_armhf.deb
-# cleanup
-# echo -e "
-# ${Color_Cyan}Cleaning up .. ${Color_Off}"
-# rm -rf /tmp/node_latest_armhf.deb
-# sudo apt autoremove -y
-
-# First, you'll need NodeJS and NPM:
-echo -e "${Color_Cyan}Run bash setup Node.js 12.x .. ${Color_Off}"
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-
-echo -e "${Color_Cyan}Installing Node.js .. this will take a while .. ${Color_Off}"
-# sudo snap install node --classic --channel=9/stable -y
-sudo apt install node -y 
-sudo apt install nodejs -y 
-sudo apt install nodered -y 
-# sudo snap install node --classic --channel=edge # last version
-
-# Passo 3. Mais tarde, se você precisar atualizar o programa, use:
-sudo snap refresh node
-sudo npm i npm@latest -g
-sudo apt dist-upgrade node -y
-sudo apt dist-upgrade nodejs -y
-
-# Passo 4. Depois, se for necessário, desinstale o programa, usando o comando abaixo;
-# sudo snap remove node
+install_nodejs
 
 # confirm version
 nodeVersion=`node -v`
 echo -e "
-${Color_Green}Successfully installed. Node.js version is: ${nodeVersion} 
-${Color_Off}"
+${Color_Green}Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
 
 # TODO
 # CHECK IF NODE IS INSTALLED BEFORE TRYING TO REMOVE IT
