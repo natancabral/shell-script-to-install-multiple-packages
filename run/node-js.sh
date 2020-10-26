@@ -17,19 +17,25 @@ Cyan='\033[0;36m'         # Cyan
 remove_nodejs() {
 
   nodeVersion=`node -v`
-  echo -e "\n ${Cyan} Current Node version is ${Color_Off}"
-  echo -e "${Green}${nodeVersion}${Color_Off}"
+  echo -e "\n ${Cyan} Current Node version is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
 
   echo -e "\n ${Cyan} Removing Node ... ${Color_Off}"
   # snap packages
   sudo snap remove node npm
-  sudo apt remove node npm
-  sudo apt purge --auto-remove nodejs npm 
+  sudo apt remove node npm -y
+  sudo apt purge --auto-remove nodejs npm --force-yes
   
-  echo -e "\n ${Cyan} Removing Nodejs ... ${Color_Off}"
-  sudo snap remove nodejs
-  sudo apt remove nodejs
-  
+  echo -e "\n ${Cyan} Removing Nodejs --force-yes... ${Color_Off}"
+  sudo snap remove node --force-yes --yes
+  sudo apt remove node --force-yes --yes
+  sudo snap remove nodejs --force-yes --yes
+  sudo apt remove nodejs --force-yes --yes
+  sudo snap remove npm --force-yes --yes
+  sudo apt remove npm --force-yes --yes
+
+  echo -e "\n ${Cyan} Force AutoRemove... ${Color_Off}"
+  sudo apt autoremove --force-yes --yes
+
   echo -e "\n ${Cyan} Removing source ... ${Color_Off}"
   # remove node source from /etc/apt/sources.list.d
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list
