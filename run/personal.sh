@@ -40,6 +40,40 @@ sudo apt -qq update
 # Remove any unnecessary packages. Unnecessary means, whenever you install an application, the system will also install the software that this application depends on.
 # sudo apt autoremove
 
+# Case
+# read -p "Continue (y/n)?" choice
+# case "$choice" in 
+#   y|Y ) echo "yes";;
+#   n|N ) echo "no";;
+#   * ) echo "invalid";;
+# esac
+
+# If
+# read -p "Continue (y/n)?" CONT
+# if [ "$CONT" = "y" ]; then
+#   echo "yaaa";
+# else
+#   echo "booo";
+# fi
+
+# If Y/y
+# read -p "Are you sure? " -n 1 -r
+# echo    # (optional) move to a new line
+# if [[ $REPLY =~ ^[Yy]$ ]]
+# then
+#    # do dangerous stuff
+# fi
+
+read -p "Continue (y/n)?" -n 1 choice # -p = prompt -n = number chars
+case "$choice" in 
+  y|Y ) echo "yes";;
+  n|N ) echo "no";;
+  x|X ) ls;;
+  * ) echo "invalid";;
+esac
+
+exit 1;
+
 # Install FLATPAK
 echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
 sudo apt -y install flatpak
