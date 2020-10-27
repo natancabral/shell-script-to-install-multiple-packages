@@ -82,6 +82,10 @@ sudo apt -y install nano
 echo -e "\n ${Cyan} VLC.. ${Color_Off}"
 sudo apt -y install vlc
 
+# OBS Studio
+echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
+sudo apt -y install obs-studio
+
 # Gnome Boxes Virtual Machine
 echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
 sudo apt -y install gnome-boxes
