@@ -92,6 +92,8 @@ sudo apt -qq update
 #   x|X) ls;;
 #   *) echo "invalid";;
 # esac
+# https://bash.cyberciti.biz/guide/The_case_statement
+# https://www.tutorialspoint.com/unix/case-esac-statement.htm
 
 # Install FLATPAK
 echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
