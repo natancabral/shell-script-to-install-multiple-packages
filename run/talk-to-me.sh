@@ -20,28 +20,62 @@ Cyan='\033[0;36m'         # Cyan
 while : 
 do
 echo "Install "
-echo "${Yellow}1${Color_Off}) ${Cyan}MySql${Color_Off} "
-echo "${Yellow}2${Color_Off}) ${Cyan}Php7${Color_Off} "
-echo "${Yellow}3${Color_Off}) ${Cyan}Apache2${Color_Off} "
-echo "${Yellow}4${Color_Off}) ${Cyan}PhpMyAdmin${Color_Off} "
-echo "${Yellow}11${Color_Off}) ${Cyan}Uau!${Color_Off} "
-echo "${Yellow}y${Color_Off}) ${Cyan}Yes${Color_Off} "
-echo "${Yellow}n${Color_Off}) ${Cyan}No${Color_Off} "
-echo "${Yellow}x${Color_Off}) ${Cyan}Exit${Color_Off} "
+echo -e "${Yellow}1${Color_Off}) ${Cyan}MySql${Color_Off} "
+echo -e "${Yellow}2${Color_Off}) ${Cyan}Php7${Color_Off} "
+echo -e "${Yellow}3${Color_Off}) ${Cyan}Apache2${Color_Off} "
+echo -e "${Yellow}4${Color_Off}) ${Cyan}PhpMyAdmin${Color_Off} "
+echo -e "${Yellow}11${Color_Off}) ${Cyan}Uau!${Color_Off} "
+echo -e "${Yellow}y${Color_Off}) ${Cyan}Yes${Color_Off} "
+echo -e "${Yellow}n${Color_Off}) ${Cyan}No${Color_Off} "
+echo -e "${Yellow}x${Color_Off}) ${Cyan}Exit${Color_Off} "
 
-  read -p "Select options" -n 2 choice
+  read -p "Select options: " -n 2 choice
   echo 
   case $choice in 
-    1) echo "Installing MySql";;
-    2) echo "Installing Php7";;
-    3) echo "Installing Apache2";;
-    4) echo "Installing PhpMyAdmin";;
-    11) echo "Installing Uau";;
-    n|N) echo "no";;
-    x|X) echo "Bye Bye" 
+    1) 
+    echo " -------------------------------------------------- "
+    echo " -- Installing MySql"
+    echo " -------------------------------------------------- "
+    ;;
+    2) 
+    echo " -------------------------------------------------- "
+    echo " -- Installing Php7"
+    echo " -------------------------------------------------- "
+    ;;
+    3) 
+    echo " -------------------------------------------------- "
+    echo " -- Installing Apache2"
+    echo " -------------------------------------------------- "
+    ;;
+    4) 
+    echo " -------------------------------------------------- "
+    echo " -- Installing PhpMyAdmin"
+    echo " -------------------------------------------------- "
+    ;;
+    11) 
+    echo " -------------------------------------------------- "
+    echo " -- Installing Uau"
+    echo " -------------------------------------------------- "
+    ;;
+    y|Y) 
+    echo " -------------------------------------------------- "
+    echo " -- yes"
+    echo " -------------------------------------------------- "
+    ls
+    ;;
+    n|N) 
+    echo " -------------------------------------------------- "
+    echo " -- no"
+    echo " -------------------------------------------------- "
+    tree
+    ;;
+    x|X) echo " --Bye Bye" 
     break
     ;;
-    *) echo "invalid";;
+    *) 
+    echo "invalid"
+    break
+    ;;
   esac
 done
 echo "Go home"
@@ -54,7 +88,7 @@ echo "New while and case... "
 echo # break line
 echo # break line
 
-echo "Please talk to me ..."
+echo "Please talk to me ... (hello|bye)"
 while :
 do
   read INPUT_STRING
