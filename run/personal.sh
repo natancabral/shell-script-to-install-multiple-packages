@@ -86,8 +86,8 @@ sudo apt -y install gnome-boxes
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
-sudo apt -y install software-properties-common apt-transport-https wget
-sudo snap -y install --classic code # or code-insiders
+sudo apt install software-properties-common apt-transport-https wget -y 
+sudo snap install --classic code --yes  # or code-insiders
 # import the Microsoft GPG key using the following
 echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
 echo -e "\n ${Green} Key.. ${Color_Off}"
