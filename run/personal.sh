@@ -31,33 +31,49 @@ sudo apt -qq update
 # sudo rm ~/.config/[package-word]/ -Rf
 
 # Install FLATPAK
+echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
 sudo apt -y install flatpak
 
 # Install SNAP
+echo -e "\n ${Cyan} Snap Snapd.. ${Color_Off}"
 sudo apt -y install snapd
 sudo apt -y install snap
 
 # Faster Open Apps - Preload on RAM
+echo -e "\n ${Cyan} Preload.. ${Color_Off}"
 sudo apt -y install preload
 
 # Git
+echo -e "\n ${Cyan} Git.. ${Color_Off}"
 sudo apt -y install git
 
 # cUrl
+echo -e "\n ${Cyan} cUrl.. ${Color_Off}"
 sudo apt -y install curl
 
 # GNOME packages
+echo -e "\n ${Cyan} Gnome Packagekit.. ${Color_Off}"
 sudo apt install gnome-packagekit -y
 gpk-application
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
-sudo snap -y install keepassxc
+sudo apt -y install keepassxc
+
+# Vim Text Editor
+echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
+sudo apt -y install vim
+
+# Nano Text Editor
+echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
+sudo apt -y install nano
 
 # VLC
-sudo snap -y install vlc
+echo -e "\n ${Cyan} VLC.. ${Color_Off}"
+sudo apt -y install vlc
 
 # Gnome Boxes Virtual Machine
+echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
 sudo apt -y install gnome-boxes
 # sudo flatpak install flathub org.gnome.Boxes
 # ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
