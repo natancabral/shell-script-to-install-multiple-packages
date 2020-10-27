@@ -29,7 +29,7 @@ do
     x|X) echo "Bye Bye" break;;
     *) echo "invalid";;
   esac
-do
+done
 echo "Go home"
 
 echo # break line
