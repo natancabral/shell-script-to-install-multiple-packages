@@ -52,9 +52,9 @@ echo -e "\n ${Cyan} cUrl.. ${Color_Off}"
 sudo apt -y install curl
 
 # GNOME packages
-echo -e "\n ${Cyan} Gnome Packagekit.. ${Color_Off}"
+echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
 sudo apt install gnome-packagekit -y
-gpk-application
+# To open: gpk-application
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
