@@ -25,10 +25,20 @@ sudo apt -qq update
 # $ sudo apt -y install [package]
 
 # Remove App
-# sudo apt-get remove --purge [package] 
+# sudo apt-get remove [package] 
 # Run these commands to delete all words and settings:
 # sudo rm ~/"[package-word]" -Rf
 # sudo rm ~/.config/[package-word]/ -Rf
+# sudo apt-get remove --purge [package] 
+
+# Purge App
+# Remove a software completely from your system with its configuration or data files so that no longer personalized settings will be available during reinstallation
+# sudo apt purge <package>
+# sudo apt remove --purge <package> 
+
+# Autoremove
+# Remove any unnecessary packages. Unnecessary means, whenever you install an application, the system will also install the software that this application depends on.
+# sudo apt autoremove
 
 # Install FLATPAK
 echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
