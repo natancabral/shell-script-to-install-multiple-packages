@@ -25,8 +25,9 @@ done
 echo 
 echo "That's all folks!"
 
-while :
-do
+echo # break line
+echo # break line
+
 echo "Install "
 echo "\n 1) MySql "
 echo "\n 2) Php7 "
@@ -36,8 +37,10 @@ echo "\n y) Yes "
 echo "\n n) No "
 echo "\n X) Exit "
 
+while :
+do
 read -p "Continue (y/n)?" -n 1 choice
-case "$choice" in 
+case $choice in 
   1 ) echo "Installing MySql";;
   2 ) echo "Installing Php7";;
   3 ) echo "Installing Apache2";;
