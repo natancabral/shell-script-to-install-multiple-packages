@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exec
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/personal.sh | bash
+
 echo "Please talk to me ..."
 while :
 do
