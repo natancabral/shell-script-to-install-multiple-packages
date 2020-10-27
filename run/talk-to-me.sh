@@ -74,7 +74,6 @@ echo -e "${Yellow}x${Color_Off}) ${Cyan}Exit${Color_Off} "
     ;;
     *) 
     echo "invalid"
-    break
     ;;
   esac
 done
