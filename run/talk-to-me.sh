@@ -40,8 +40,10 @@ echo "\n X) Exit "
 
 while :
 do
-read -p "Continue (y/n)?" -n 1 choice
-case $choice in 
+# read -p "Continue (y/n)?" -n 1 choice
+# case $choice in 
+  read INPUT_STRING
+  case $INPUT_STRING in
   1) echo "Installing MySql";;
   2) echo "Installing Php7";;
   3) echo "Installing Apache2";;
