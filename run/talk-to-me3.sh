@@ -37,18 +37,19 @@ echo "\n 4) PhpMyAdmin "
 echo "\n y) Yes "
 echo "\n n) No "
 echo "\n X) Exit "
-
-while :
+while :;
 do
+  read INPUT_STRING
 # read -p "Continue (y/n)?" -n 1 choice
 # case $choice in 
-  read INPUT_STRING
   case $INPUT_STRING in
-  1) echo "Installing MySql";;
-  2) echo "Installing Php7";;
-  3) echo "Installing Apache2";;
-  4) echo "Installing PhpMyAdmin";;
-  n|N ) echo "no";;
-  *) echo "invalid";;
-esac
+    1) echo "Installing MySql";;
+    2) echo "Installing Php7";;
+    3) echo "Installing Apache2";;
+    4) echo "Installing PhpMyAdmin";;
+    n|N) echo "no";;
+    x|X) echo "Bye Bye" break;;
+    *) echo "invalid";;
+  esac
 do
+echo "Go home"
