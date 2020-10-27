@@ -64,36 +64,34 @@ sudo apt -qq update
 #    # do dangerous stuff
 # fi
 
-echo "Please talk to me ..."
-while :
-do
-  read INPUT_STRING
-  case $INPUT_STRING in
-	hello)
-		echo "Hello yourself!"
-		;;
-	bye)
-		echo "See you again!"
-		break
-		;;
-	*)
-		echo "Sorry, I don't understand"
-		;;
-  esac
-done
-echo 
-echo "That's all folks!"
+# echo "Please talk to me ..."
+# while :
+# do
+#   read INPUT_STRING
+#   case $INPUT_STRING in
+# 	hello) 
+#		echo "Hello yourself!"
+#		;;
+#	bye)
+#		echo "See you again!"
+#		break
+#		;;
+#	*)
+#		echo "Sorry, I don't understand"
+#		;;
+#  esac
+# done
+# echo 
+# echo "That's all folks!"
 
 # -p = prompt -n = number chars, choice = variable
-read -p "Continue (y/n)?" -n 1 choice 
-case $choice in 
-  y|Y) echo "yes";;
-  n|N) echo "no";;
-  x|X) ls;;
-  *) echo "invalid";;
-esac
-
-exit 1;
+# read -p "Continue (y/n)?" -n 1 choice 
+# case $choice in 
+#   y|Y) echo "yes";;
+#   n|N) echo "no";;
+#   x|X) ls;;
+#   *) echo "invalid";;
+# esac
 
 # Install FLATPAK
 echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
