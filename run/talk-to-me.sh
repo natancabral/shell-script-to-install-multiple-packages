@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Exec
+
 # cd ~/Downloads/ 
 # curl https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/talk-to-me.sh > talk.sh
 # bash talk.sh
@@ -41,11 +42,11 @@ while :
 do
 read -p "Continue (y/n)?" -n 1 choice
 case $choice in 
-  1 ) echo "Installing MySql";;
-  2 ) echo "Installing Php7";;
-  3 ) echo "Installing Apache2";;
-  4 ) echo "Installing PhpMyAdmin";;
+  1) echo "Installing MySql";;
+  2) echo "Installing Php7";;
+  3) echo "Installing Apache2";;
+  4) echo "Installing PhpMyAdmin";;
   n|N ) echo "no";;
-  * ) echo "invalid";;
+  *) echo "invalid";;
 esac
 do
