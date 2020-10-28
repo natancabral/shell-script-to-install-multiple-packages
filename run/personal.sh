@@ -121,6 +121,10 @@ echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off
 sudo apt install gnome-packagekit -y
 # To open: gpk-application
 
+# G SNAP STORE
+echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
+sudo snap install gsnapstore -y
+
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
 sudo apt -y install keepassxc
