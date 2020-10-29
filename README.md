@@ -71,10 +71,10 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 read -p "Continue (y/n)?" -n 1 choice 
   # -p prompt dialog
   # -n number of input chars 
-  case "$choice" in 
-    y|Y ) echo "yes";;
-    n|N ) echo "no";;
-    * ) echo "invalid" break;;
+case "$choice" in 
+  y|Y ) echo "yes";;
+  n|N ) echo "no";;
+  * ) echo "invalid" break;;
 esac
 
 # If
