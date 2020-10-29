@@ -98,7 +98,7 @@ while :
 do
   read INPUT_STRING
   case $INPUT_STRING in
-	  hello) 
+    hello) 
       echo "Hello yourself!";;
     bye)
       echo "See you again!" break;;
