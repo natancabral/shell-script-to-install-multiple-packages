@@ -63,3 +63,49 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 * Git
 
 
+## Bash Shell Script Code
+
+```bash
+
+# Case
+read -p "Continue (y/n)?" -n 1 choice 
+  # -p prompt dialog
+  # -n number of input chars 
+  case "$choice" in 
+    y|Y ) echo "yes";;
+    n|N ) echo "no";;
+    * ) echo "invalid" break;;
+esac
+
+# If
+read -p "Continue (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "yaaa";
+else
+  echo "booo";
+fi
+
+# If Y/y
+read -p "Are you sure? " -n 1 -r
+echo # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+   # do dangerous stuff
+fi
+
+echo "Please talk to me ..."
+while :
+do
+  read INPUT_STRING
+  case $INPUT_STRING in
+	  hello) 
+      echo "Hello yourself!";;
+    bye)
+      echo "See you again!" break;;
+    *) 
+      echo "Sorry, I don't understand";;
+  esac
+done
+echo 
+echo "That's all folks!"
+```
