@@ -10,16 +10,12 @@ sudo su --
 
 ## Installation
 
-### Automatic
-
-Install wget on terminal
+* Install wget on terminal
 
 ```
 sudo apt-get install wget
 sudo apt install wget
 ```
-
----
 
 ## LAMP
 Apache, MySQL, PHP (LAMP).
@@ -54,39 +50,17 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 
 ---
 
-## React
-React – A JavaScript library for building user interfaces.
-
-Run the below command in terminal:
-```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/react-js.sh | bash
-```
-
-* React Js
-
----
-
-## Electron
-Electron is a builder cross-platform desktop apps with JavaScript.
-
-Run the below command in terminal:
-```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/electron.sh | bash
-```
-
-* Electron Js
+## Personal Plus
+* personal.sh
+* ui.sh
 
 ---
 
 ## ToDo
+* Electron
+* React Native
 * Java
 * Spring Boot
 * Git
-
-
-## Plus
-* personal.sh
-* domain.sh
-
 
 
