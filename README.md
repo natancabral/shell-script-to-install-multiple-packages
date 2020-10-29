@@ -10,10 +10,9 @@ sudo su --
 
 ## Installation
 
-* Install wget on terminal
+* Install wget on terminal (apt or apt-get)
 
 ```
-sudo apt-get install wget
 sudo apt install wget
 ```
 
