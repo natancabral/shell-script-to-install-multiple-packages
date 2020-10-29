@@ -93,6 +93,7 @@ then
    # do dangerous stuff
 fi
 
+# While : Do
 echo "Please talk to me ..."
 while :
 do
