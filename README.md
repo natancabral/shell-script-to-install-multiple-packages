@@ -32,14 +32,16 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/uninstall-lamp.sh | bash
 ```
 
+#### Install
+
 * Update Repositories (apt)
-* Apache
-* EncryptCertbot
+* Apache2
+* Encrypt Certbot
 * PHP 7.X
 * MySQL
 * ```// secureMySQL # do not```
 * PHPMyAdmin
-* Adjusta
+* Adjusts
   * Adjust firewall (enable Mods permalinks, .htaccess etc)
   * Adjust permissions (/var/www/html/ and Apache2)
   * Allow running Apache on boot up
