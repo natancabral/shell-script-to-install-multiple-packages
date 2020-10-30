@@ -37,7 +37,7 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 * EncryptCertbot
 * PHP 7.X
 * MySQL
-* # *secureMySQL* # do not
+* ```// secureMySQL # do not```
 * PHPMyAdmin
 * Adjusta
   * Adjust firewall (enable Mods permalinks, .htaccess etc)
