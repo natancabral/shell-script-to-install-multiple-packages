@@ -160,16 +160,18 @@ sudo apt -y install gnome-boxes
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
 sudo apt install software-properties-common apt-transport-https wget -y 
-sudo snap install --classic code --yes  # or code-insiders
+echo -e "\n ${Green} Download Code Key.. ${Color_Off}"
 # import the Microsoft GPG key using the following
-echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
-echo -e "\n ${Green} Key.. ${Color_Off}"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+echo -e "\n ${Green} Download Repository Code.. ${Color_Off}"
 # enable the Visual Studio Code repository by typing: 
-echo -e "\n ${Green} Download Code.. ${Color_Off}"
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
+echo -e "\n ${Green} Install Code.. ${Color_Off}"
 sudo apt -y install code
+# Or
+echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
+sudo snap install --classic code --yes  # or code-insiders
 # Or
 # Download .deb
 # https://code.visualstudio.com/Download
