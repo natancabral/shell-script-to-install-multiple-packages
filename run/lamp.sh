@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
+
 ###################################################################
 #         Author: Natan Cabral
 #           Link: https://github.com/natancabral/ubuntu-bash-script-config-lamp/
@@ -8,9 +11,6 @@
 #          Notes: In case of any errors (e.g. MySQL) just re-run the script. 
 #                 Nothing will be re-installed except for the packages with errors.
 ###################################################################
-
-# Install
-# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/lamp.sh | bash
 
 # Color Reset
 Color_Off='\033[0m'       # Reset
