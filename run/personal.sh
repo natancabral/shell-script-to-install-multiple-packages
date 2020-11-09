@@ -116,6 +116,10 @@ sudo apt -y install git
 echo -e "\n ${Cyan} cUrl.. ${Color_Off}"
 sudo apt -y install curl
 
+# Standard Notes
+echo -e "\n ${Cyan} Standard Notes.. ${Color_Off}"
+sudo snap install standard-notes
+
 # GNOME packages
 echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
 sudo apt install gnome-packagekit -y
