@@ -3,7 +3,7 @@
 # Exec
 
 # cd ~/Downloads/ 
-# curl https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config-lamp/main/run/talk-to-me.sh > talk.sh
+# curl https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/talk-to-me.sh > talk.sh
 # bash talk.sh
 
 # Color Reset
