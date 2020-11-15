@@ -145,6 +145,11 @@ sudo apt -y install nano
 echo -e "\n ${Cyan} VLC.. ${Color_Off}"
 sudo apt -y install vlc
 
+# Vino Screen Share / Mirror
+echo -e "\n ${Cyan} Vioe Screen Share / Mirror.. ${Color_Off}"
+echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
+sudo apt -y install vino
+
 # OBS Studio
 echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
 sudo apt -y install obs-studio
