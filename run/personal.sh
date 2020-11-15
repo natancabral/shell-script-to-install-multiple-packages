@@ -146,7 +146,7 @@ echo -e "\n ${Cyan} VLC.. ${Color_Off}"
 sudo apt -y install vlc
 
 # Vino Screen Share / Mirror
-echo -e "\n ${Cyan} Vioe Screen Share / Mirror.. ${Color_Off}"
+echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
 echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
 sudo apt -y install vino
 
