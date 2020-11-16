@@ -116,6 +116,10 @@ sudo apt -y install git
 echo -e "\n ${Cyan} cUrl.. ${Color_Off}"
 sudo apt -y install curl
 
+# Composer
+echo -e "\n ${Cyan} Composer.. ${Color_Off}"
+sudo apt -y install composer
+
 # Standard Notes
 echo -e "\n ${Cyan} Standard Notes.. ${Color_Off}"
 sudo snap install standard-notes
