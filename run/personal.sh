@@ -141,6 +141,17 @@ sudo apt -y install vim
 echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
 sudo apt -y install nano
 
+# Unrar
+echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
+sudo apt -y install unrar
+# unrar e filename.rar
+# unrar e filename.rar /home/
+# e : Extract files without archived paths
+# unrar x filename.rar
+# x : Extract files with full path
+# unrar l filename.rar
+# l[t[a],b] : List archive contents [technical[all], bare]
+
 # VLC
 echo -e "\n ${Cyan} VLC.. ${Color_Off}"
 sudo apt -y install vlc
