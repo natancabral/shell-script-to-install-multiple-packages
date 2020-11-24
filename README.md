@@ -58,9 +58,10 @@ Run the below command in terminal:
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js.sh | bash
 ```
-
-* Node.js
-
+Or try Node.js + NPM + Yarn reinstall
+```bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js-npm-yarn-reinstall.sh | bash
+```
 ---
 
 ## Personal Plus
