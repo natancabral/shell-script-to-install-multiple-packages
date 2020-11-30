@@ -120,6 +120,10 @@ sudo apt -y install curl
 echo -e "\n ${Cyan} Composer.. ${Color_Off}"
 sudo apt -y install composer
 
+# Yarn - Package Manager
+echo -e "\n ${Cyan} Yarn - Package Manager.. ${Color_Off}"
+sudo apt-get install yarn -y
+
 # Standard Notes
 echo -e "\n ${Cyan} Standard Notes.. ${Color_Off}"
 sudo snap install standard-notes
