@@ -100,42 +100,46 @@ echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
 sudo apt -y install flatpak
 
 # Install SNAP
-echo -e "\n ${Cyan} Snap Snapd.. ${Color_Off}"
+echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
 sudo apt -y install snapd
 sudo apt -y install snap
 
 # Faster Open Apps - Preload on RAM
-echo -e "\n ${Cyan} Preload.. ${Color_Off}"
+echo -e "\n ${Cyan} Preload ${Color_Off}"
 sudo apt -y install preload
 
 # Git
-echo -e "\n ${Cyan} Git.. ${Color_Off}"
+echo -e "\n ${Cyan} Git ${Color_Off}"
 sudo apt -y install git
 
 # cUrl
-echo -e "\n ${Cyan} cUrl.. ${Color_Off}"
+echo -e "\n ${Cyan} cUrl ${Color_Off}"
 sudo apt -y install curl
 
 # Composer
-echo -e "\n ${Cyan} Composer.. ${Color_Off}"
+echo -e "\n ${Cyan} Composer ${Color_Off}"
 sudo apt -y install composer
 
 # Yarn - Package Manager
-echo -e "\n ${Cyan} Yarn - Package Manager.. ${Color_Off}"
-sudo apt-get install yarn -y
+echo -e "\n ${Cyan} Yarn - Package Manager ${Color_Off}"
+sudo apt -y install yarn
 
 # Standard Notes
-echo -e "\n ${Cyan} Standard Notes.. ${Color_Off}"
-sudo snap install standard-notes
+echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
+sudo snap -y install standard-notes 
+
+# Beekeeper Studio
+echo -e "\n ${Cyan} Beekeeper Studio ${Color_Off}"
+sudo snap -y install beekeeper-studio 
 
 # GNOME packages
 echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
-sudo apt install gnome-packagekit -y
+sudo apt -y install gnome-packagekit
 # To open: gpk-application
 
 # G SNAP STORE
 echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
-sudo snap install gsnapstore -y
+sudo snap -y install gsnapstore
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
