@@ -5,7 +5,8 @@ Easy to use Bash Script to Install components stack on Ubuntu.
 Root permission, but no necessery:
 
 ```
-sudo su --
+su root # debian
+sudo su - # ubuntu
 ```
 
 ## Installation
