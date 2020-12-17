@@ -153,6 +153,10 @@ sudo apt-get -y install vim
 echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
 sudo apt-get -y install nano
 
+# Filezilla FTP
+echo -e "\n ${Cyan} FTP Filezilla.. ${Color_Off}"
+sudo apt-get -y install filezilla
+
 # Unrar
 echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
 sudo apt-get -y install unrar
