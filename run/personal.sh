@@ -16,13 +16,13 @@ Cyan='\033[0;36m'         # Cyan
 
 # Update
 echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
-sudo apt -qq update 
+sudo apt-get -qq update 
 
 # Yes Default
 # --yes | -y
 # --force-yes
 # --assume-yes - yes to all
-# $ sudo apt -y install [package]
+# $ sudo apt-get -y install [package]
 
 # Remove App
 # sudo apt-get remove [package] 
@@ -33,12 +33,12 @@ sudo apt -qq update
 
 # Purge App
 # Remove a software completely from your system with its configuration or data files so that no longer personalized settings will be available during reinstallation
-# sudo apt purge <package>
-# sudo apt remove --purge <package> 
+# sudo apt-get purge <package>
+# sudo apt-get remove --purge <package> 
 
 # Autoremove
 # Remove any unnecessary packages. Unnecessary means, whenever you install an application, the system will also install the software that this application depends on.
-# sudo apt autoremove
+# sudo apt-get autoremove
 
 # Case
 # read -p "Continue (y/n)?" choice
@@ -97,32 +97,32 @@ sudo apt -qq update
 
 # Install FLATPAK
 echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
-sudo apt -y install flatpak
+sudo apt-get -y install flatpak
 
 # Install SNAP
 echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
-sudo apt -y install snapd
-sudo apt -y install snap
+sudo apt-get -y install snapd
+sudo apt-get -y install snap
 
 # Faster Open Apps - Preload on RAM
 echo -e "\n ${Cyan} Preload ${Color_Off}"
-sudo apt -y install preload
+sudo apt-get -y install preload
 
 # Git
 echo -e "\n ${Cyan} Git ${Color_Off}"
-sudo apt -y install git
+sudo apt-get -y install git
 
 # cUrl
 echo -e "\n ${Cyan} cUrl ${Color_Off}"
-sudo apt -y install curl
+sudo apt-get -y install curl
 
 # Composer
 echo -e "\n ${Cyan} Composer ${Color_Off}"
-sudo apt -y install composer
+sudo apt-get -y install composer
 
 # Yarn - Package Manager
 echo -e "\n ${Cyan} Yarn - Package Manager ${Color_Off}"
-sudo apt -y install yarn
+sudo apt-get -y install yarn
 
 # Standard Notes
 echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
@@ -134,7 +134,7 @@ sudo snap -y install beekeeper-studio
 
 # GNOME packages
 echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
-sudo apt -y install gnome-packagekit
+sudo apt-get -y install gnome-packagekit
 # To open: gpk-application
 
 # G SNAP STORE
@@ -143,19 +143,19 @@ sudo snap -y install gsnapstore
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
-sudo apt -y install keepassxc
+sudo apt-get -y install keepassxc
 
 # Vim Text Editor
 echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
-sudo apt -y install vim
+sudo apt-get -y install vim
 
 # Nano Text Editor
 echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
-sudo apt -y install nano
+sudo apt-get -y install nano
 
 # Unrar
 echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
-sudo apt -y install unrar
+sudo apt-get -y install unrar
 # unrar e filename.rar
 # unrar e filename.rar /home/
 # e : Extract files without archived paths
@@ -166,20 +166,20 @@ sudo apt -y install unrar
 
 # VLC
 echo -e "\n ${Cyan} VLC.. ${Color_Off}"
-sudo apt -y install vlc
+sudo apt-get -y install vlc
 
 # Vino Screen Share / Mirror
 echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
 echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
-sudo apt -y install vino
+sudo apt-get -y install vino
 
 # OBS Studio
 echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
-sudo apt -y install obs-studio
+sudo apt-get -y install obs-studio
 
 # Gnome Boxes Virtual Machine
 echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
-sudo apt -y install gnome-boxes
+sudo apt-get -y install gnome-boxes
 # sudo flatpak install flathub org.gnome.Boxes
 # ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
 # $ sudo rm /var/lib/apt/lists/lock
@@ -191,25 +191,25 @@ sudo apt -y install gnome-boxes
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
-sudo apt install software-properties-common apt-transport-https wget -y 
+sudo apt-get install software-properties-common apt-transport-https wget -y 
 echo -e "\n ${Green} Download Code Key.. ${Color_Off}"
 # import the Microsoft GPG key using the following
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 echo -e "\n ${Green} Download Repository Code.. ${Color_Off}"
 # enable the Visual Studio Code repository by typing: 
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update
+sudo apt-get update
 echo -e "\n ${Green} Install Code.. ${Color_Off}"
-sudo apt -y install code
+sudo apt-get -y install code
 # Or
 echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
 sudo snap install --classic code --yes  # or code-insiders
 # Or
 # Download .deb
 # https://code.visualstudio.com/Download
-# sudo apt install ./<file>.deb
+# sudo apt-get install ./<file>.deb
 
 # Final
-sudo apt update
-sudo apt --fix-broken install --yes
-# sudo apt upgrade 
+sudo apt-get update
+sudo apt-get --fix-broken install --yes
+# sudo apt-get upgrade 
