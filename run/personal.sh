@@ -149,6 +149,10 @@ sudo apt-get -y install keepassxc
 echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
 sudo apt-get -y install vim
 
+# Stacer
+echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
+sudo apt-get install stacer
+
 # Nano Text Editor
 echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
 sudo apt-get -y install nano
