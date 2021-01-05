@@ -149,6 +149,10 @@ sudo apt-get -y install keepassxc
 echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
 sudo apt-get -y install vim
 
+# gnome-tweaks
+echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
+sudo apt-get install -y gnome-tweaks 
+
 # Stacer
 echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
 sudo apt-get install stacer
