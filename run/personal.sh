@@ -101,8 +101,8 @@ sudo apt-get -y install flatpak
 
 # Install SNAP
 echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
-sudo apt-get -y install snapd
 sudo apt-get -y install snap
+sudo apt-get -y install snapd
 
 # Faster Open Apps - Preload on RAM
 echo -e "\n ${Cyan} Preload ${Color_Off}"
@@ -126,11 +126,11 @@ sudo apt-get -y install yarn
 
 # Standard Notes
 echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
-sudo snap -y install standard-notes 
+sudo snap install --classic --yes standard-notes
 
 # Beekeeper Studio
 echo -e "\n ${Cyan} Beekeeper Studio ${Color_Off}"
-sudo snap -y install beekeeper-studio 
+sudo snap install --classic --yes beekeeper-studio 
 
 # GNOME packages
 echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
@@ -139,7 +139,7 @@ sudo apt-get -y install gnome-packagekit
 
 # G SNAP STORE
 echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
-sudo snap -y install gsnapstore
+sudo snap install --classic --yes gsnapstore
 
 # Keepass
 echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
@@ -186,7 +186,7 @@ echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
 sudo apt-get -y install vino
 
 echo -e "\n ${Cyan} Beekeeper Studio / SQL DataBase.. ${Color_Off}"
-sudo snap install -y beekeeper-studio
+sudo snap install --classic --yes beekeeper-studio
 
 # OBS Studio
 echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
