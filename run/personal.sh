@@ -185,6 +185,9 @@ echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
 echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
 sudo apt-get -y install vino
 
+echo -e "\n ${Cyan} Beekeeper Studio / SQL DataBase.. ${Color_Off}"
+sudo snap install -y beekeeper-studio
+
 # OBS Studio
 echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
 sudo apt-get -y install obs-studio
