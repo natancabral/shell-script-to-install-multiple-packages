@@ -260,7 +260,7 @@ sudo snap install --classic code  # or code-insiders
 # sudo apt-get install ./<file>.deb
 
 echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple}|  Done!                                                              |${Color_Off}"
+echo -e "${Purple}|  APT : update / ugrade / fix-broken / autoremove / autoclean        |${Color_Off}"
 echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
 
 # Final
@@ -271,3 +271,7 @@ sudo apt-get --fix-broken install --yes
 sudo apt-get autoremove
 # Remove deb no more necessary
 sudo apt-get autoclean
+
+echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
+echo -e "${Purple}|  Done!                                                              |${Color_Off}"
+echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
