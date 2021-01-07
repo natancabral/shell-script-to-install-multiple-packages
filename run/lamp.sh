@@ -164,6 +164,14 @@ createFileAndOpenBrowser() {
   xdg-open "http://localhost/info.php"
 }
 
+finally () {
+ # update
+ sudo apt update
+ sudo apt upgrade
+ sudo apt-get autoremove
+ sudo apt-get autoclean
+} 
+
 
 # RUN
 update
@@ -178,6 +186,7 @@ setPermissions
 restartApache
 createFileAndOpenBrowser
 update
+finally
 
 echo -e "\n${Green} SUCCESS! MySQL password is: ${PASS_MYSQL_ROOT} ${Color_Off}"
 
