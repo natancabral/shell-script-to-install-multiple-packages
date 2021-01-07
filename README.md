@@ -1,9 +1,9 @@
 # Shell Script to Install Multiple Packages
 Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu / Mint**. 
 
-* LAMP (Apache, MySQL, PHP)
-* Node.js
-* Personal
+* [LAMP (Apache, MySQL, PHP)](#lamp)
+* [Node.js](#nodejs)
+* [Personal](#personal)
 
 ----
 
