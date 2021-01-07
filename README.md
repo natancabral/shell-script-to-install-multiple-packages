@@ -1,7 +1,7 @@
-# Ubuntu Bash Script 
-Easy to use Bash Script to Install components stack on Ubuntu. 
-## How to Install on Ubuntu.
-
+# Shell Script to Install Multiple Packages
+Easy to use Bash Script to Install components stack on Debian distro / Ubuntu / Mint. 
+## How to Install on 
+####  Debian distro / Ubuntu / Mint
 Root permission, but no necessery:
 
 ```
@@ -24,13 +24,13 @@ Run the below command in terminal:
 
 * Install 
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
 ```
 
 * Remove All
 
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/uninstall-lamp.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/uninstall-lamp.sh | bash
 ```
 
 #### Install
@@ -57,17 +57,17 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Run the below command in terminal:
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js.sh | bash
 ```
 Or try Node.js + NPM + Yarn reinstall
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js-npm-yarn-reinstall.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js-npm-yarn-reinstall.sh | bash
 ```
 ---
 
 ## Personal
 ```bash
-wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/personal.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/personal.sh | bash
 ```
 
 ---
