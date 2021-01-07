@@ -65,8 +65,10 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 ```
 ---
 
-## Personal Plus
-* personal.sh
+## Personal
+```bash
+wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/personal.sh | bash
+```
 * ui.sh
 
 ---
