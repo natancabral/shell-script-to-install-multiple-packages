@@ -93,7 +93,7 @@ Cyan='\033[0;36m'         # Cyan
 
 # Update
 echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple} Updating package repositories.. ${Color_Off}"
+echo -e "${Purple}| * Updating package repositories... ${Color_Off}"
 echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
 sudo apt-get -qq update 
 
@@ -101,7 +101,7 @@ sudo apt-get -qq update
 # wget / cUrl / Package Manager
 # ---------------------------------------------------------------------------
 echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow} wget / cUrl / Package Manager ${Color_Off}"
+echo -e "${Yellow}| * wget / cUrl / Package Manager ${Color_Off}                        |"
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # wget
@@ -138,7 +138,7 @@ sudo apt-get -y install gnome-packagekit
 # Database / FTP / Pass / Git
 # ---------------------------------------------------------------------------
 echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow} Database / FTP / Pass / Git ${Color_Off}"
+echo -e "${Yellow}| * Database / FTP / Pass / Git ${Color_Off}                          |"
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Beekeeper Studio / DataBase
@@ -162,7 +162,7 @@ sudo apt-get -y install git
 # System
 # ---------------------------------------------------------------------------
 echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow} System ${Color_Off}"
+echo -e "${Yellow}| * System ${Color_Off}                                                |"
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Faster Open Apps - Preload on RAM
@@ -204,7 +204,7 @@ sudo apt-get -y install gnome-boxes
 # Video
 # ---------------------------------------------------------------------------
 echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow} Video ${Color_Off}"
+echo -e "${Yellow}| * Video ${Color_Off}                                                |"
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # VLC
@@ -224,7 +224,7 @@ sudo apt-get -y install obs-studio
 # Text
 # ---------------------------------------------------------------------------
 echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow} Text ${Color_Off}"
+echo -e "${Yellow}| * Text ${Color_Off}                                                 |"
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Vim Text Editor
@@ -263,7 +263,7 @@ sudo snap install --classic code  # or code-insiders
 # Done!
 # ---------------------------------------------------------------------------
 echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple} Done! ${Color_Off}"
+echo -e "${Purple}| * Done! ${Color_Off}                                                |"
 echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
 
 # Final
