@@ -6,7 +6,7 @@ Root permission, but no necessery:
 
 ```
 su root # debian
-sudo su - # ubuntu
+sudo su # ubuntu
 ```
 
 ## Installation
@@ -14,7 +14,7 @@ sudo su - # ubuntu
 * Install wget on terminal (apt or apt-get)
 
 ```
-sudo apt install wget
+sudo apt-get install wget
 ```
 
 ## LAMP
