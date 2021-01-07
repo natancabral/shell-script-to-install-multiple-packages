@@ -66,6 +66,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 
 * Node.js
 * NPM
+* NVM
 * Yarn
 
 ---
