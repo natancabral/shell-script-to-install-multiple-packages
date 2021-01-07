@@ -4,8 +4,8 @@ Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu 
 Root permission, but no necessery:
 
 ```
-su root # debian
-sudo su # ubuntu
+$ su root # debian
+$ sudo su # ubuntu
 ```
 
 ## Installation
@@ -13,7 +13,7 @@ sudo su # ubuntu
 * Install wget on terminal
 
 ```
-sudo apt-get install wget
+$ sudo apt-get install wget
 ```
 
 ## LAMP
@@ -23,13 +23,13 @@ Run the below command in terminal:
 
 * Install 
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/lamp.sh | bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/lamp.sh | bash
 ```
 
 * Remove All
 
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/uninstall-lamp.sh | bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/uninstall-lamp.sh | bash
 ```
 
 #### Install
@@ -56,21 +56,22 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Run the below command in terminal:
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
 ```
 Or try Node.js + NPM + Yarn reinstall
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
 ```
 ---
 
 ## Personal
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/personal.sh | bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/personal.sh | bash
 ```
 #### Install
 
-* Package Manager / cUrl
+* Package Manager / wget / cUrl
+  * wget
   * cUrl
   * Flatpak
   * Snap
