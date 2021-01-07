@@ -1,7 +1,6 @@
 # Shell Script to Install Multiple Packages
-Easy to use Bash Script to Install components stack on Debian distro / Ubuntu / Mint. 
+Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu / Mint**. 
 ## How to Install 
-####  Debian distro / Ubuntu / Mint
 Root permission, but no necessery:
 
 ```
