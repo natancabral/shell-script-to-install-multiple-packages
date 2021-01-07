@@ -96,8 +96,12 @@ sudo apt-get -qq update
 # https://www.tutorialspoint.com/unix/case-esac-statement.htm
 
 # ---------------------------------------------------------------------------
-# cUrl / Package Manager
+# wget / cUrl / Package Manager
 # ---------------------------------------------------------------------------
+
+# wget
+echo -e "\n ${Cyan} wget ${Color_Off}"
+sudo apt-get -y install wget
 
 # cUrl
 echo -e "\n ${Cyan} cUrl ${Color_Off}"
