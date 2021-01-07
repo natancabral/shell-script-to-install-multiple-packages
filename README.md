@@ -1,5 +1,10 @@
 # Shell Script to Install Multiple Packages
 Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu / Mint**. 
+
+* LAMP (Apache, MySQL, PHP)
+* Node.js
+* Personal
+
 ## How to Install 
 Root permission, but no necessery:
 
@@ -62,6 +67,13 @@ Or try Node.js + NPM + Yarn reinstall
 ```bash
 $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
 ```
+
+#### Install
+
+* Node.js
+* NPM
+* Yarn
+
 ---
 
 ## Personal
