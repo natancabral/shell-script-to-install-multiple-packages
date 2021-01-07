@@ -92,17 +92,13 @@ Cyan='\033[0;36m'         # Cyan
 # https://www.tutorialspoint.com/unix/case-esac-statement.htm
 
 # Update
-echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple}|  Updating package repositories...                                   |${Color_Off}"
-echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "${Purple} * Updating package repositories...${Color_Off}"
 sudo apt-get -qq update 
 
 # ---------------------------------------------------------------------------
 # wget / cUrl / Package Manager
 # ---------------------------------------------------------------------------
-echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow}|  wget / cUrl / Package Manager                                      |${Color_Off}"
-echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * wget / cUrl / Package Manager ${Color_Off}"
 
 # wget
 echo -e "\n${Cyan} * wget ${Color_Off}"
@@ -137,9 +133,7 @@ sudo apt-get -y install gnome-packagekit
 # ---------------------------------------------------------------------------
 # Database / FTP / Pass / Git
 # ---------------------------------------------------------------------------
-echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow}|  Database / FTP / Pass / Git                                        |${Color_Off}"
-echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * Database / FTP / Pass / Git ${Color_Off}"
 
 # Beekeeper Studio / DataBase
 echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
@@ -161,9 +155,7 @@ sudo apt-get -y install git
 # ---------------------------------------------------------------------------
 # System
 # ---------------------------------------------------------------------------
-echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow}|  System                                                             |${Color_Off}"
-echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * System ${Color_Off}"
 
 # Faster Open Apps - Preload on RAM
 echo -e "\n${Cyan} * Preload ${Color_Off}"
@@ -203,9 +195,7 @@ sudo apt-get -y install gnome-boxes
 # ---------------------------------------------------------------------------
 # Video
 # ---------------------------------------------------------------------------
-echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow}|  Video                                                              |${Color_Off}"
-echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * Video ${Color_Off}"
 
 # VLC
 echo -e "\n${Cyan} * VLC.. ${Color_Off}"
@@ -223,9 +213,7 @@ sudo apt-get -y install obs-studio
 # ---------------------------------------------------------------------------
 # Text
 # ---------------------------------------------------------------------------
-echo -e "${Yellow}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Yellow}|  Text                                                               |${Color_Off}"
-echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * Text ${Color_Off}"
 
 # Vim Text Editor
 echo -e "\n${Cyan} * Vim Text Editor.. ${Color_Off}"
@@ -259,9 +247,7 @@ sudo snap install --classic code  # or code-insiders
 # https://code.visualstudio.com/Download
 # sudo apt-get install ./<file>.deb
 
-echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple}|  APT : update / ugrade / fix-broken / autoremove / autoclean        |${Color_Off}"
-echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "\n${Yellow} * APT : update / ugrade / fix-broken / autoremove / autoclean ${Color_Off}"
 
 # Final
 # sudo apt-get upgrade 
@@ -272,8 +258,6 @@ sudo apt-get autoremove
 # Remove deb no more necessary
 sudo apt-get autoclean
 
-echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
-echo -e "${Purple}|  Done!                                                              |${Color_Off}"
-echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
+echo -e "${Purple} *  Done! ${Color_Off}"
 
 # done!
