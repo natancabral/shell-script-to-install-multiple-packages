@@ -5,23 +5,19 @@ Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu 
 * Node.js
 * Personal
 
+----
+
 ## How to Install 
-Root permission, but no necessery:
+
+Root permission, but no necessery, and install wget on terminal
 
 ```
 $ su root # debian
 $ sudo su # ubuntu
-```
-
-## Installation
-
-* Install wget on terminal
-
-```
 $ sudo apt-get install wget
 ```
 
-## LAMP
+### LAMP
 Apache, MySQL, PHP (LAMP).
 
 Run the below command in terminal:
@@ -56,10 +52,8 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 
 ---
 
-## Node.js
+### Node.js
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-
-Run the below command in terminal:
 ```bash
 $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
 ```
@@ -76,7 +70,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 
 ---
 
-## Personal
+### Personal
 ```bash
 $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/personal.sh | bash
 ```
@@ -119,7 +113,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 * React Native
 * Vue / React / Angular
 
-## Bash Shell Script Code
+#### Bash Shell Script Code
 
 ```bash
 
