@@ -69,17 +69,13 @@ wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-s
 ```bash
 wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/personal.sh | bash
 ```
-* ui.sh
 
 ---
 
 ## ToDo
-* Electron
+* Java / Spring Boot
 * React Native
-* Java
-* Spring Boot
-* Git
-
+* Vue / React / Angular
 
 ## Bash Shell Script Code
 
