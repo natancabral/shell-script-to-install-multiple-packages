@@ -275,3 +275,5 @@ sudo apt-get autoclean
 echo -e "${Purple}\n----------------------------------------------------------------------- ${Color_Off}"
 echo -e "${Purple}|  Done!                                                              |${Color_Off}"
 echo -e "${Purple}----------------------------------------------------------------------- ${Color_Off}"
+
+# done!
