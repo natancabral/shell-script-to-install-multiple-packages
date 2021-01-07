@@ -24,13 +24,13 @@ Run the below command in terminal:
 
 * Install 
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/lamp.sh | bash
 ```
 
 * Remove All
 
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/uninstall-lamp.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/uninstall-lamp.sh | bash
 ```
 
 #### Install
@@ -57,18 +57,48 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Run the below command in terminal:
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
 ```
 Or try Node.js + NPM + Yarn reinstall
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js-npm-yarn-reinstall.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
 ```
 ---
 
 ## Personal
 ```bash
-sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/personal.sh | bash
+sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/personal.sh | bash
 ```
+#### Install
+
+* Package Manager / cUrl
+  * cUrl
+  * Flatpak
+  * Snap
+  * Yarn
+  * Composer
+  * gnome packages
+* Database / FTP / Pass / Git
+  * Beekeeper Studio (databases)
+  * Filezilla FTP
+  * Keepass
+  * Git
+* System
+  * Faster Open Apps - Preload on RAM
+  * Stacer
+  * Unrar
+  * Gnome Tweaks
+  * Gnome Boxes Virtual Machine
+* Video
+  * VLC
+  * Vino Screen Share / Mirror
+  * OBS Studio Stream Live
+* Text
+  * Vim Text Editor
+  * Nano Text Editor
+  * Standard Notes
+  * MS Visual Code
+  
 
 ---
 
