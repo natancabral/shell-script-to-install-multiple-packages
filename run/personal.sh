@@ -95,332 +95,127 @@ sudo apt-get -qq update
 # https://bash.cyberciti.biz/guide/The_case_statement
 # https://www.tutorialspoint.com/unix/case-esac-statement.htm
 
-# Install FLATPAK
-echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
-sudo apt-get -y install flatpak
-
-# Install SNAP
-echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
-sudo apt-get -y install snap
-sudo apt-get -y install snapd
-
-# Faster Open Apps - Preload on RAM
-echo -e "\n ${Cyan} Preload ${Color_Off}"
-sudo apt-get -y install preload
-
-# Git
-echo -e "\n ${Cyan} Git ${Color_Off}"
-sudo apt-get -y install git
+# ---------------------------------------------------------------------------
+# cUrl / Package Manager
+# ---------------------------------------------------------------------------
 
 # cUrl
 echo -e "\n ${Cyan} cUrl ${Color_Off}"
 sudo apt-get -y install curl
 
-# Composer
-echo -e "\n ${Cyan} Composer ${Color_Off}"
-sudo apt-get -y install composer
+# Flatpak - Package Manager
+echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
+sudo apt-get -y install flatpak
+
+# Snap - Package Manager
+echo -e "\n ${Cyan} Snap Snapd - Package Manager ${Color_Off}"
+sudo apt-get -y install snap
+sudo apt-get -y install snapd
 
 # Yarn - Package Manager
 echo -e "\n ${Cyan} Yarn - Package Manager ${Color_Off}"
 sudo apt-get -y install yarn
+
+# Composer - Package Manager
+echo -e "\n ${Cyan} Composer ${Color_Off}"
+sudo apt-get -y install composer
+
+# GNOME packages
+echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
+sudo apt-get -y install gnome-packagekit
+# To open: gpk-application
+
+# ---------------------------------------------------------------------------
+# Database / FTP / Pass / Git
+# ---------------------------------------------------------------------------
+
+# Beekeeper Studio / DataBase
+echo -e "\n ${Cyan} Beekeeper Studio / DataBase.. ${Color_Off}"
+sudo snap install --classic beekeeper-studio
+
+# Filezilla FTP
+echo -e "\n ${Cyan} FTP Filezilla.. ${Color_Off}"
+sudo apt-get -y install filezilla
+
+# Keepass
+echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
+sudo apt-get -y install keepassxc
+
+# Git
+echo -e "\n ${Cyan} Git ${Color_Off}"
+sudo apt-get -y install git
+
+# ---------------------------------------------------------------------------
+# System
+# ---------------------------------------------------------------------------
+
+# Faster Open Apps - Preload on RAM
+echo -e "\n ${Cyan} Preload ${Color_Off}"
+sudo apt-get -y install preload
+
+# Stacer
+echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
+sudo apt-get install stacer
+
+# gnome-tweaks
+echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
+sudo apt-get install -y gnome-tweaks 
+
+# Unrar
+echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
+sudo apt-get -y install unrar
+# unrar e filename.rar
+# unrar e filename.rar /home/
+# e : Extract files without archived paths
+# unrar x filename.rar
+# x : Extract files with full path
+# unrar l filename.rar
+# l[t[a],b] : List archive contents [technical[all], bare]
+
+# Gnome Boxes Virtual Machine
+echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
+sudo apt-get -y install gnome-boxes
+# sudo flatpak install flathub org.gnome.Boxes
+# ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
+# $ sudo rm /var/lib/apt/lists/lock
+# $ sudo rm /var/cache/apt/archives/lock
+# $ sudo rm /var/lib/dpkg/lock
+
+# Virtual Box Machine
+# sudo apt-get install virtualbox
+
+# ---------------------------------------------------------------------------
+# Video
+# ---------------------------------------------------------------------------
+
+# VLC
+echo -e "\n ${Cyan} VLC.. ${Color_Off}"
+sudo apt-get -y install vlc
+
+# Vino Screen Share / Mirror
+echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
+echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
+sudo apt-get -y install vino
+
+# OBS Studio Stream Live
+echo -e "\n ${Cyan} OBS Studio Stream Live.. ${Color_Off}"
+sudo apt-get -y install obs-studio
+
+# ---------------------------------------------------------------------------
+# Text
+# ---------------------------------------------------------------------------
+
+# Vim Text Editor
+echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
+sudo apt-get -y install vim
+
+# Nano Text Editor
+echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
+sudo apt-get -y install nano
 
 # Standard Notes
 echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
 sudo snap install --classic --echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
-sudo apt-get -y install flatpak
-
-# Install SNAP
-echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
-sudo apt-get -y install snap
-sudo apt-get -y install snapd
-
-# Faster Open Apps - Preload on RAM
-echo -e "\n ${Cyan} Preload ${Color_Off}"
-sudo apt-get -y install preload
-
-# Git
-echo -e "\n ${Cyan} Git ${Color_Off}"
-sudo apt-get -y install git
-
-# cUrl
-echo -e "\n ${Cyan} cUrl ${Color_Off}"
-sudo apt-get -y install curl
-
-# Composer
-echo -e "\n ${Cyan} Composer ${Color_Off}"
-sudo apt-get -y install composer
-
-# Yarn - Package Manager
-echo -e "\n ${Cyan} Yarn - Package Manager ${Color_Off}"
-sudo apt-get -y install yarn
-
-# Standard Notes
-echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
-sudo snap install --classic standard-notes
-
-# Beekeeper Studio
-echo -e "\n ${Cyan} Beekeeper Studio ${Color_Off}"
-sudo snap install --classic beekeeper-studio 
-
-# GNOME packages
-echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
-sudo apt-get -y install gnome-packagekit
-# To open: gpk-application
-
-# G SNAP STORE
-echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
-sudo snap install --classic gsnapstore
-
-# Keepass
-echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
-sudo apt-get -y install keepassxc
-
-# Vim Text Editor
-echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
-sudo apt-get -y install vim
-
-# gnome-tweaks
-echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
-sudo apt-get install -y gnome-tweaks 
-
-# Stacer
-echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
-sudo apt-get install stacer
-
-# Nano Text Editor
-echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
-sudo apt-get -y install nano
-
-# Filezilla FTP
-echo -e "\n ${Cyan} FTP Filezilla.. ${Color_Off}"
-sudo apt-get -y install filezilla
-
-# Unrar
-echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
-sudo apt-get -y install unrar
-# unrar e filename.rar
-# unrar e filename.rar /home/
-# e : Extract files without archived paths
-# unrar x filename.rar
-# x : Extract files with full path
-# unrar l filename.rar
-# l[t[a],b] : List archive contents [technical[all], bare]
-
-# VLCecho -e "\n ${Cyan} Flatpak.. ${Color_Off}"
-sudo apt-get -y install flatpak
-
-# Install SNAP
-echo -e "\n ${Cyan} Snap Snapd ${Color_Off}"
-sudo apt-get -y install snap
-sudo apt-get -y install snapd
-
-# Faster Open Apps - Preload on RAM
-echo -e "\n ${Cyan} Preload ${Color_Off}"
-sudo apt-get -y install preload
-
-# Git
-echo -e "\n ${Cyan} Git ${Color_Off}"
-sudo apt-get -y install git
-
-# cUrl
-echo -e "\n ${Cyan} cUrl ${Color_Off}"
-sudo apt-get -y install curl
-
-# Composer
-echo -e "\n ${Cyan} Composer ${Color_Off}"
-sudo apt-get -y install composer
-
-# Yarn - Package Manager
-echo -e "\n ${Cyan} Yarn - Package Manager ${Color_Off}"
-sudo apt-get -y install yarn
-
-# Standard Notes
-echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
-sudo snap install --classic standard-notes
-
-# Beekeeper Studio
-echo -e "\n ${Cyan} Beekeeper Studio ${Color_Off}"
-sudo snap install --classic beekeeper-studio 
-
-# GNOME packages
-echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
-sudo apt-get -y install gnome-packagekit
-# To open: gpk-application
-
-# G SNAP STORE
-echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
-sudo snap install --classic gsnapstore
-
-# Keepass
-echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
-sudo apt-get -y install keepassxc
-
-# Vim Text Editor
-echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
-sudo apt-get -y install vim
-
-# gnome-tweaks
-echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
-sudo apt-get install -y gnome-tweaks 
-
-# Stacer
-echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
-sudo apt-get install stacer
-
-# Nano Text Editor
-echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
-sudo apt-get -y install nano
-
-# Filezilla FTP
-echo -e "\n ${Cyan} FTP Filezilla.. ${Color_Off}"
-sudo apt-get -y install filezilla
-
-# Unrar
-echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
-sudo apt-get -y install unrar
-# unrar e filename.rar
-# unrar e filename.rar /home/
-# e : Extract files without archived paths
-# unrar x filename.rar
-# x : Extract files with full path
-# unrar l filename.rar
-# l[t[a],b] : List archive contents [technical[all], bare]
-
-# VLC
-echo -e "\n ${Cyan} VLC.. ${Color_Off}"
-sudo apt-get -y install vlc
-
-# Vino Screen Share / Mirror
-echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
-echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
-sudo apt-get -y install vino
-
-echo -e "\n ${Cyan} Beekeeper Studio / SQL DataBase.. ${Color_Off}"
-sudo snap install --classic beekeeper-studio
-
-# OBS Studio
-echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
-sudo apt-get -y install obs-studio
-
-# Gnome Boxes Virtual Machine
-echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
-sudo apt-get -y install gnome-boxes
-# sudo flatpak install flathub org.gnome.Boxes
-# ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
-# $ sudo rm /var/lib/apt/lists/lock
-# $ sudo rm /var/cache/apt/archives/lock
-# $ sudo rm /var/lib/dpkg/lock
-
-# Virtual Box Machine
-# sudo apt-get install virtualbox
-
-# MS Code
-echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
-echo -e "\n ${Cyan} VLC.. ${Color_Off}"
-sudo apt-get -y install vlc
-
-# Vino Screen Share / Mirror
-echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
-echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
-sudo apt-get -y install vino
-
-echo -e "\n ${Cyan} Beekeeper Studio / SQL DataBase.. ${Color_Off}"
-sudo snap install --classic --yes beekeeper-studio
-
-# OBS Studio
-echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
-sudo apt-get -y install obs-studio
-
-# Gnome Boxes Virtual Machine
-echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
-sudo apt-get -y install gnome-boxes
-# sudo flatpak install flathub org.gnome.Boxes
-# ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
-# $ sudo rm /var/lib/apt/lists/lock
-# $ sudo rm /var/cache/apt/archives/lock
-# $ sudo rm /var/lib/dpkg/lock
-
-# Virtual Box Machine
-# sudo apt-get install virtualbox
-
-# MS Code
-echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"yes standard-notes
-
-# Beekeeper Studio
-echo -e "\n ${Cyan} Beekeeper Studio ${Color_Off}"
-sudo snap install --classic --yes beekeeper-studio 
-
-# GNOME packages
-echo -e "\n ${Cyan} Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
-sudo apt-get -y install gnome-packagekit
-# To open: gpk-application
-
-# G SNAP STORE
-echo -e "\n ${Cyan} G SNAP Store.. ${Color_Off}"
-sudo snap install --classic --yes gsnapstore
-
-# Keepass
-echo -e "\n ${Cyan} Install Keepass.. ${Color_Off}"
-sudo apt-get -y install keepassxc
-
-# Vim Text Editor
-echo -e "\n ${Cyan} Vim Text Editor.. ${Color_Off}"
-sudo apt-get -y install vim
-
-# gnome-tweaks
-echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
-sudo apt-get install -y gnome-tweaks 
-
-# Stacer
-echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
-sudo apt-get install stacer
-
-# Nano Text Editor
-echo -e "\n ${Cyan} Nano Text Editor.. ${Color_Off}"
-sudo apt-get -y install nano
-
-# Filezilla FTP
-echo -e "\n ${Cyan} FTP Filezilla.. ${Color_Off}"
-sudo apt-get -y install filezilla
-
-# Unrar
-echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
-sudo apt-get -y install unrar
-# unrar e filename.rar
-# unrar e filename.rar /home/
-# e : Extract files without archived paths
-# unrar x filename.rar
-# x : Extract files with full path
-# unrar l filename.rar
-# l[t[a],b] : List archive contents [technical[all], bare]
-
-# VLC
-echo -e "\n ${Cyan} VLC.. ${Color_Off}"
-sudo apt-get -y install vlc
-
-# Vino Screen Share / Mirror
-echo -e "\n ${Cyan} Vino Screen Share / Mirror.. ${Color_Off}"
-echo -e " ${Cyan} Enter Settings > Sharing ${Color_Off}"
-sudo apt-get -y install vino
-
-echo -e "\n ${Cyan} Beekeeper Studio / SQL DataBase.. ${Color_Off}"
-sudo snap install --classic --yes beekeeper-studio
-
-# OBS Studio
-echo -e "\n ${Cyan} OBS Studio.. ${Color_Off}"
-sudo apt-get -y install obs-studio
-
-# Gnome Boxes Virtual Machine
-echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
-sudo apt-get -y install gnome-boxes
-# sudo flatpak install flathub org.gnome.Boxes
-# ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
-# $ sudo rm /var/lib/apt/lists/lock
-# $ sudo rm /var/cache/apt/archives/lock
-# $ sudo rm /var/lib/dpkg/lock
-
-# Virtual Box Machine
-# sudo apt-get install virtualbox
 
 # MS Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
@@ -436,13 +231,21 @@ echo -e "\n ${Cyan} Install Code.. ${Color_Off}"
 sudo apt-get -y install code
 # Or
 echo -e "\n ${Cyan} Install Code Try (2).. ${Color_Off}"
-sudo snap install --classic code --yes  # or code-insiders
+sudo snap install --classic code  # or code-insiders
 # Or
 # Download .deb
 # https://code.visualstudio.com/Download
 # sudo apt-get install ./<file>.deb
 
+# ---------------------------------------------------------------------------
+# Done!
+# ---------------------------------------------------------------------------
+
 # Final
+# sudo apt-get upgrade 
 sudo apt-get update
 sudo apt-get --fix-broken install --yes
-# sudo apt-get upgrade 
+# Remove installed old files 
+sudo apt-get autoremove
+# Remove deb no more necessary
+sudo apt-get autoclean
