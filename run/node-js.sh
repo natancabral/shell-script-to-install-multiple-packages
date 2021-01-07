@@ -17,11 +17,11 @@ Cyan='\033[0;36m'         # Cyan
 removeNodejs() {
 
   nodeVersion=`node -v`
-  echo -e "\n ${Cyan} Current Node version is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
+  echo -e "\n${Purple} * Current Node version is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
 
   # sudo apt purge --auto-remove nodejs npm --force-yes
   
-  echo -e "\n ${Cyan} Removing Nodejs --force-yes... ${Color_Off}"
+  echo -e "\n${Red} * Removing Nodejs --force-yes... ${Color_Off}"
   sudo snap remove node --yes
   sudo apt remove node --yes
   sudo snap remove nodejs --yes
@@ -29,23 +29,23 @@ removeNodejs() {
   sudo snap remove npm --yes
   sudo apt remove npm --yes
 
-  echo -e "\n ${Cyan} Removing Node-Legacy... ${Color_Off}"
+  echo -e "\n${Red} * Removing Node-Legacy... ${Color_Off}"
   sudo apt remove -y node npm nodejs nodered nodejs-legacy --yes
 
-  echo -e "\n ${Cyan} Force AutoRemove... ${Color_Off}"
+  echo -e "\n${Red} * Force AutoRemove... ${Color_Off}"
   sudo apt autoremove --yes
 
-  echo -e "\n ${Cyan} Removing source ... ${Color_Off}"
+  echo -e "\n${Red} * Removing source ... ${Color_Off}"
   # remove node source from /etc/apt/sources.list.d
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list
   sudo rm -rf /etc/apt/sources.list.d/nodesource.list.save
 
-  echo -e "\n ${Cyan} NVM has been installed. run 'source ~/.bashrc' to use it right away. \n  Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
+  echo -e "\n${Red} * NVM has been installed. run 'source ~/.bashrc' to use it right away. \n  Use 'nvm install --lts' to install and use LTS version of Node.. ${Color_Off}"
 }
 
 installNvm() {
 
-  echo -e "\n ${Cyan} Installing NVM (Node Version Manager, manage multiple versions nodejs).. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing NVM (Node Version Manager, manage multiple versions nodejs).. ${Color_Off}"
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
   sudo apt install npm -y
 
@@ -73,17 +73,17 @@ installNvm() {
 installNodejs() {
 
   # First, you'll need NodeJS and NPM:
-  echo -e "\n ${Cyan} Run bash setup Node.js 12.x .. ${Color_Off}"
-  echo -e "\n ${Cyan} https://github.com/nodesource/distributions/blob/master/README.md ${Color_Off}"  
+  echo -e "\n${Cyan} * Run bash setup Node.js 12.x .. ${Color_Off}"
+  echo -e "\n${Cyan} * https://github.com/nodesource/distributions/blob/master/README.md ${Color_Off}"  
   # Using Ubuntu
   sudo apt install curl
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-  echo -e "\n ${Cyan} Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
   sudo apt install nodejs -y 
   sudo apt install node -y 
   
   nodeVersion=`node -v`
-  echo -e "\n ${Cyan} Node version installed is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
+  echo -e "\n${Cyan} * Node version installed is${Color_Off} ${Green}${nodeVersion}${Color_Off}"
 
   # sudo snap install node --classic --channel=9/stable -y
   # sudo snap install node --classic --channel=edge # last version
@@ -104,10 +104,13 @@ installNodejs
 
 # confirm version
 nodeVersion=`node -v`
-echo -e "\n ${Green} Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
+echo -e "\n${Green} * Successfully installed. Node.js version is: ${nodeVersion} ${Color_Off}"
 
 # update
 sudo apt update
+sudo apt upgrade
+sudo apt-get autoremove
+sudo apt-get autoclean
 
 # TODO
 # Check if the bash profile is called `.bashrc` (Ubuntu) or `.bash_profile` (macOS)
