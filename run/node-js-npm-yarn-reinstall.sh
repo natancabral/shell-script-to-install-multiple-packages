@@ -18,7 +18,7 @@ Cyan='\033[0;36m'         # Cyan
 
 function uninstall_old_version() {
   
-  echo -e "\n ${Cyan} Removing Yarn, Nodejs, NPM, Modules --force-yes... ${Color_Off}"
+  echo -e "\n${Red} * Removing Yarn, Nodejs, NPM, Modules --force-yes... ${Color_Off}"
   sudo npm remove -g yarn npm n
   sudo apt-get remove --purge -y npm nodejs
   sudo rm -rf /usr/local/lib/node_modules
@@ -57,12 +57,12 @@ function uninstall_old_version() {
 
 function setup_npm() {
 
-  echo -e "\n ${Cyan} Install NodeJs... ${Color_Off}"
+  echo -e "\n${Cyan} * Install NodeJs... ${Color_Off}"
   # sudo apt-get update
   sudo apt-get install -y nodejs
   # nodejs -v
 
-  echo -e "\n ${Cyan} Install NPM... ${Color_Off}"
+  echo -e "\n${Cyan} * Install NPM... ${Color_Off}"
   sudo apt-get update
   sudo apt-get install -y npm
   # npm -v
@@ -86,7 +86,7 @@ function setup_nodejs() {
 }
 
 function setup_yarn() {
-  echo -e "\n ${Cyan} Install Yarn... ${Color_Off}"
+  echo -e "\n${Cyan} * Install Yarn... ${Color_Off}"
   sudo npm i -g yarn
   # yarn -v
 }
