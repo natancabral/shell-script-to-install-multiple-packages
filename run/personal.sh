@@ -157,10 +157,6 @@ sudo apt-get -y install preload
 echo -e "\n ${Cyan} Stacer.. ${Color_Off}"
 sudo apt-get install stacer
 
-# gnome-tweaks
-echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
-sudo apt-get install -y gnome-tweaks 
-
 # Unrar
 echo -e "\n ${Cyan} Unrar.. ${Color_Off}"
 sudo apt-get -y install unrar
@@ -171,6 +167,10 @@ sudo apt-get -y install unrar
 # x : Extract files with full path
 # unrar l filename.rar
 # l[t[a],b] : List archive contents [technical[all], bare]
+
+# gnome-tweaks
+echo -e "\n ${Cyan} Gnome Tweaks.. ${Color_Off}"
+sudo apt-get install -y gnome-tweaks 
 
 # Gnome Boxes Virtual Machine
 echo -e "\n ${Cyan} GNOME Boxes Virtual Machine.. ${Color_Off}"
@@ -217,7 +217,7 @@ sudo apt-get -y install nano
 echo -e "\n ${Cyan} Standard Notes ${Color_Off}"
 sudo snap install --classic --echo -e "\n ${Cyan} Flatpak.. ${Color_Off}"
 
-# MS Code
+# MS Visual Code
 echo -e "\n ${Cyan} Install Code Try (1).. ${Color_Off}"
 sudo apt-get install software-properties-common apt-transport-https wget -y 
 echo -e "\n ${Green} Download Code Key.. ${Color_Off}"
