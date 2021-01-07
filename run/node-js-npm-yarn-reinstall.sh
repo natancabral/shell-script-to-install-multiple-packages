@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install
-# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/node-js-npm-yarn-reinstall.sh | bash
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
 
 # Color Reset
 Color_Off='\033[0m'       # Reset
