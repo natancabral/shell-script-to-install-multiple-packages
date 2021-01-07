@@ -1,6 +1,6 @@
 # Shell Script to Install Multiple Packages
 Easy to use Bash Script to Install components stack on Debian distro / Ubuntu / Mint. 
-## How to Install on 
+## How to Install 
 ####  Debian distro / Ubuntu / Mint
 Root permission, but no necessery:
 
@@ -11,7 +11,7 @@ sudo su # ubuntu
 
 ## Installation
 
-* Install wget on terminal (apt or apt-get)
+* Install wget on terminal
 
 ```
 sudo apt-get install wget
