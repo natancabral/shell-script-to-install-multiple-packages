@@ -105,32 +105,32 @@ echo -e "${Yellow}| * wget / cUrl / Package Manager ${Color_Off}                
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # wget
-echo -e "\n${Cyan}wget ${Color_Off}"
+echo -e "\n${Cyan} * wget ${Color_Off}"
 sudo apt-get -y install wget
 
 # cUrl
-echo -e "\n${Cyan}cUrl ${Color_Off}"
+echo -e "\n${Cyan} * cUrl ${Color_Off}"
 sudo apt-get -y install curl
 
 # Flatpak - Package Manager
-echo -e "\n${Cyan}Flatpak.. ${Color_Off}"
+echo -e "\n${Cyan} * Flatpak.. ${Color_Off}"
 sudo apt-get -y install flatpak
 
 # Snap - Package Manager
-echo -e "\n${Cyan}Snap Snapd - Package Manager ${Color_Off}"
+echo -e "\n${Cyan} * Snap / Snapd ${Color_Off}"
 sudo apt-get -y install snap
 sudo apt-get -y install snapd
 
 # Yarn - Package Manager
-echo -e "\n${Cyan}Yarn - Package Manager ${Color_Off}"
+echo -e "\n${Cyan} * Yarn ${Color_Off}"
 sudo apt-get -y install yarn
 
 # Composer - Package Manager
-echo -e "\n${Cyan}Composer ${Color_Off}"
+echo -e "\n${Cyan} * Composer ${Color_Off}"
 sudo apt-get -y install composer
 
 # GNOME packages
-echo -e "\n${Cyan}Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
 sudo apt-get -y install gnome-packagekit
 # To open: gpk-application
 
@@ -142,20 +142,20 @@ echo -e "${Yellow}| * Database / FTP / Pass / Git ${Color_Off}                  
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Beekeeper Studio / DataBase
-echo -e "\n${Cyan}Beekeeper Studio / DataBase.. ${Color_Off}"
+echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
 sudo snap install --classic beekeeper-studio
 
 # Filezilla FTP
-echo -e "\n${Cyan}FTP Filezilla.. ${Color_Off}"
+echo -e "\n${Cyan} * FTP Filezilla.. ${Color_Off}"
 sudo apt-get -y install filezilla
 
 # Keepass
-echo -e "\n${Cyan}Install Keepass.. ${Color_Off}"
+echo -e "\n${Cyan} * Install Keepass.. ${Color_Off}"
 sudo apt-get -y install keepassxc
 
 # Git
 echo -e ""
-echo -e "\n${Cyan}Git ${Color_Off}"
+echo -e "\n${Cyan} * Git ${Color_Off}"
 sudo apt-get -y install git
 
 # ---------------------------------------------------------------------------
@@ -166,15 +166,15 @@ echo -e "${Yellow}| * System ${Color_Off}                                       
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Faster Open Apps - Preload on RAM
-echo -e "\n${Cyan}Preload ${Color_Off}"
+echo -e "\n${Cyan} * Preload ${Color_Off}"
 sudo apt-get -y install preload
 
 # Stacer
-echo -e "\n${Cyan}Stacer.. ${Color_Off}"
+echo -e "\n${Cyan} * Stacer.. ${Color_Off}"
 sudo apt-get install stacer
 
 # Unrar
-echo -e "\n${Cyan}Unrar.. ${Color_Off}"
+echo -e "\n${Cyan} * Unrar.. ${Color_Off}"
 sudo apt-get -y install unrar
 # unrar e filename.rar
 # unrar e filename.rar /home/
@@ -185,11 +185,11 @@ sudo apt-get -y install unrar
 # l[t[a],b] : List archive contents [technical[all], bare]
 
 # gnome-tweaks
-echo -e "\n${Cyan}Gnome Tweaks.. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Tweaks.. ${Color_Off}"
 sudo apt-get install -y gnome-tweaks 
 
 # Gnome Boxes Virtual Machine
-echo -e "\n${Cyan}Gnome Boxes Virtual Machine.. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Boxes Virtual Machine.. ${Color_Off}"
 sudo apt-get -y install gnome-boxes
 # sudo flatpak install flathub org.gnome.Boxes
 # ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
@@ -208,16 +208,16 @@ echo -e "${Yellow}| * Video ${Color_Off}                                        
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # VLC
-echo -e "\n${Cyan}VLC.. ${Color_Off}"
+echo -e "\n${Cyan} * VLC.. ${Color_Off}"
 sudo apt-get -y install vlc
 
 # Vino Screen Share / Mirror
-echo -e "\n${Cyan}Vino Screen Share / Mirror.. ${Color_Off}"
-echo -e "${Green}Enter Settings > Sharing ${Color_Off}"
+echo -e "\n${Cyan} * Vino Screen Share / Mirror.. ${Color_Off}"
+echo -e "${Green}   * Enter Settings > Sharing ${Color_Off}"
 sudo apt-get -y install vino
 
 # OBS Studio Stream Live
-echo -e "\n${Cyan}OBS Studio Stream Live.. ${Color_Off}"
+echo -e "\n${Cyan} * OBS Studio Stream Live.. ${Color_Off}"
 sudo apt-get -y install obs-studio
 
 # ---------------------------------------------------------------------------
@@ -228,31 +228,31 @@ echo -e "${Yellow}| * Text ${Color_Off}                                         
 echo -e "${Yellow}----------------------------------------------------------------------- ${Color_Off}"
 
 # Vim Text Editor
-echo -e "\n${Cyan}Vim Text Editor.. ${Color_Off}"
+echo -e "\n${Cyan} * Vim Text Editor.. ${Color_Off}"
 sudo apt-get -y install vim
 
 # Nano Text Editor
-echo -e "\n${Cyan}Nano Text Editor.. ${Color_Off}"
+echo -e "\n${Cyan} * Nano Text Editor.. ${Color_Off}"
 sudo apt-get -y install nano
 
 # Standard Notes
-echo -e "\n${Cyan}Standard Notes ${Color_Off}"
+echo -e "\n${Cyan} * Standard Notes ${Color_Off}"
 sudo snap install --classic --echo -e "${Cyan} Flatpak.. ${Color_Off}"
 
 # MS Visual Code
-echo -e "\n${Cyan}Install Code Try (1).. ${Color_Off}"
+echo -e "\n${Cyan} * Init Install Visual Code... ${Color_Off}"
 sudo apt-get install software-properties-common apt-transport-https wget -y 
-echo -e "${Green}Download Code Key.. ${Color_Off}"
+echo -e "${Green}   * Download Code Key.. ${Color_Off}"
 # import the Microsoft GPG key using the following
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-echo -e "${Green}Download Repository Code.. ${Color_Off}"
+echo -e "${Green}   * Download Repository Code.. ${Color_Off}"
 # enable the Visual Studio Code repository by typing: 
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt-get update
-echo -e "${Cyan}Install Code.. ${Color_Off}"
+echo -e "${Cyan} * Install Code Try (1) ${Color_Off}"
 sudo apt-get -y install code
 # Or
-echo -e "${Cyan}Install Code Try (2).. ${Color_Off}"
+echo -e "${Cyan} * Install Code Try (2) ${Color_Off}"
 sudo snap install --classic code  # or code-insiders
 # Or
 # Download .deb
