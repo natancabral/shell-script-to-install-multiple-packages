@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install
-# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/ubuntu-bash-script-config/main/run/lamp.sh | bash
+# wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/lamp.sh | bash
 
 ###################################################################
 #         Author: Natan Cabral
@@ -31,17 +31,17 @@ PASS_PHPMYADMIN_ROOT="${PASS_MYSQL_ROOT}" # Your MySQL root pass
 
 # Check if running as root  
 if [ "$(id -u)" != "0" ]; then  
-  echo -e "\n ${Yellow} This script must be run as root ${Color_Off}" 
-  echo -e " ${Yellow} Try change to user root: sudo su -- or sudo su - userroot ${Color_Off}" 
-  echo -e " ${Blue} sudo su -- or ${Color_Off}" 
-  echo -e " ${Blue} sudo su - [root username] ${Color_Off}" 
+  echo -e "\n${Yellow} This script must be run as root ${Color_Off}" 
+  echo -e "${Yellow} Try change to user root: sudo su -- or sudo su - userroot ${Color_Off}" 
+  echo -e "${Blue} sudo su -- or ${Color_Off}" 
+  echo -e "${Blue} sudo su - [root username] ${Color_Off}" 
   echo -e "" 1>&2 
   exit 1  
 fi
 
 update() {
   # Update system repos
-  echo -e "\n ${Cyan} Updating package repositories.. ${Color_Off}"
+  echo -e "\n${Purple} * Updating package repositories... ${Color_Off}"
   sudo apt-get -qq update -y
   sudo apt-get --fix-broken install --yes
   sudo apt-get list --upgradable
@@ -50,14 +50,14 @@ update() {
 
 installApache() {
   # Apache
-  echo -e "\n ${Cyan} Installing Apache.. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing Apache.. ${Color_Off}"
   sudo apt-get -qy install apache2 apache2-doc libexpat1 ssl-cert 
   # check Apache configuration: apachectl configtest
 }
 
 installLetsEncryptCertbot() {
   # Let's Encrypt SSL 
-  echo -e "\n ${Cyan} Installing Let's Encrypt SSL.. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing Let's Encrypt SSL.. ${Color_Off}"
 
   sudo apt-get update # update repo sources
   sudo apt-get install -y software-properties-common # required in order to add a repo
@@ -69,7 +69,7 @@ installLetsEncryptCertbot() {
 
 installPHP() {
   # PHP and Modules
-  echo -e "\n ${Cyan} Installing PHP and common Modules.. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing PHP and common Modules.. ${Color_Off}"
 
   # PHP5 on Ubuntu 14.04 LTS
   # apt-get install php5 libapache2-mod-php5 php5-cli php5-common php5-curl php5-dev php5-gd php5-intl php5-mcrypt php5-mysql php5-recode php5-xml php5-pspell php5-ps php5-imagick php-pear php-gettext -y
@@ -86,7 +86,7 @@ installPHP() {
 
 installMySQL() {
   # MySQL
-  echo -e "\n ${Cyan} Installing MySQL.. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing MySQL.. ${Color_Off}"
   
   # set password with `debconf-set-selections` so you don't have to enter it in prompt and the script continues
   sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password ${PASS_MYSQL_ROOT}" # new password for the MySQL root user
@@ -98,7 +98,7 @@ installMySQL() {
 
 secureMySQL() {
   # secure MySQL install
-  echo -e "\n ${Cyan} Securing MySQL.. ${Color_Off}"
+  echo -e "\n${Green} * Securing MySQL.. ${Color_Off}"
   
   mysql --user=root --password=${PASS_MYSQL_ROOT} << EOFMYSQLSECURE
 DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');
@@ -112,7 +112,7 @@ EOFMYSQLSECURE
 
 installPHPMyAdmin() {
   # PHPMyAdmin
-  echo -e "\n ${Cyan} Installing PHPMyAdmin.. ${Color_Off}"
+  echo -e "\n${Cyan} * Installing PHPMyAdmin.. ${Color_Off}"
   
   # set answers with `debconf-set-selections` so you don't have to enter it in prompt and the script continues
   sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" # Select Web Server
@@ -128,7 +128,7 @@ installPHPMyAdmin() {
 
 enableMods() {
   # Enable mod_rewrite, required for WordPress permalinks and .htaccess files
-  echo -e "\n ${Cyan} Enabling Modules.. ${Color_Off}"
+  echo -e "\n${Cyan} * Enabling Modules.. ${Color_Off}"
 
   sudo a2enmod rewrite
   # php5enmod mcrypt # PHP5 on Ubuntu 14.04 LTS
@@ -138,7 +138,7 @@ enableMods() {
 
 setPermissions() {
   # Permissions
-  echo -e "\n ${Cyan} Setting Ownership for /var/www.. ${Color_Off}"
+  echo -e "\n${Green} * Setting Ownership for /var/www.. ${Color_Off}"
   sudo chown -R www-data:www-data /var/www
   # Allow Read/Write for Owner
   sudo chmod -R 0755 /var/www/html/
@@ -151,7 +151,7 @@ setPermissions() {
 
 restartApache() {
   # Restart Apache
-  echo -e "\n ${Cyan} Restarting Apache.. ${Color_Off}"
+  echo -e "\n${Green} * Restarting Apache.. ${Color_Off}"
   sudo service apache2 restart #or
   sudo systemctl restart apache2
 }
