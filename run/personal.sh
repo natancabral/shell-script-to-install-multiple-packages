@@ -126,7 +126,8 @@ echo -e "\n${Cyan} * Composer ${Color_Off}"
 sudo apt-get -y install composer
 
 # GNOME packages
-echo -e "\n${Cyan} * Gnome Packagekit (to open: \$ gpk-application).. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Packagekit ${Color_Off}"
+echo -e "\n${Green} * \$ gpk-application ${Color_Off}"
 sudo apt-get -y install gnome-packagekit
 # To open: gpk-application
 
@@ -163,7 +164,12 @@ sudo apt-get -y install preload
 
 # Stacer
 echo -e "\n${Cyan} * Stacer.. ${Color_Off}"
-sudo apt-get install stacer
+sudo apt-get -y install stacer
+
+# Htop Memory
+echo -e "\n${Cyan} * Htop Memory.. ${Color_Off}"
+echo -e "\n${Green} \$ htop ${Color_Off}"
+sudo apt-get -y install htop
 
 # Unrar
 echo -e "\n${Cyan} * Unrar.. ${Color_Off}"
