@@ -168,7 +168,9 @@ sudo apt-get -y install stacer
 
 # Htop Memory
 echo -e "\n${Cyan} * Htop Memory.. ${Color_Off}"
-echo -e "\n${Green} \$ htop ${Color_Off}"
+echo -e "${Green} \$ htop ${Color_Off}"
+echo -e "\n${Cyan} * Full data cpu/memory ${Color_Off}"
+echo -e "${Green} \$ lshw ${Color_Off}"
 sudo apt-get -y install htop
 
 # Unrar
