@@ -93,6 +93,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 * System
   * Faster Open Apps - Preload on RAM
   * Stacer
+  * Htop Memory
   * Unrar
   * Gnome Tweaks
   * Gnome Boxes Virtual Machine
