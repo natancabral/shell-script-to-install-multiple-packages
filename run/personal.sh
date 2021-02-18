@@ -121,10 +121,6 @@ sudo apt-get -y install snapd
 echo -e "\n${Cyan} * Yarn ${Color_Off}"
 sudo apt-get -y install yarn
 
-# Composer - Package Manager
-echo -e "\n${Cyan} * Composer ${Color_Off}"
-sudo apt-get -y install composer
-
 # GNOME packages
 echo -e "\n${Cyan} * Gnome Packagekit ${Color_Off}"
 echo -e "\n${Green} * \$ gpk-application ${Color_Off}"
@@ -217,6 +213,10 @@ sudo apt-get -y install vino
 # OBS Studio Stream Live
 echo -e "\n${Cyan} * OBS Studio Stream Live.. ${Color_Off}"
 sudo apt-get -y install obs-studio
+
+# Zoom Client Meeting
+echo -e "\n${Cyan} * Zoom Client Meeting ${Color_Off}"
+sudo snap install zoom-client
 
 # ---------------------------------------------------------------------------
 # Text
