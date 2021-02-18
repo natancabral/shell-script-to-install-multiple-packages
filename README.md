@@ -83,7 +83,6 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Flatpak
   * Snap
   * Yarn
-  * Composer
   * gnome packages
 * Database / FTP / Pass / Git
   * Beekeeper Studio (databases)
@@ -101,6 +100,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * VLC
   * Vino Screen Share / Mirror
   * OBS Studio Stream Live
+  * Zoom Meeting Client
 * Text
   * Vim Text Editor
   * Nano Text Editor
