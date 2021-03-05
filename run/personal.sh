@@ -136,6 +136,10 @@ echo -e "\n${Yellow} * Database / FTP / Pass / Git ${Color_Off}"
 echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
 sudo snap install --classic beekeeper-studio
 
+# SSH Server
+echo -e "\n${Cyan} * SSH Server.. ${Color_Off}"
+sudo apt-get install openssh-server
+
 # Filezilla FTP
 echo -e "\n${Cyan} * FTP Filezilla.. ${Color_Off}"
 sudo apt-get -y install filezilla
