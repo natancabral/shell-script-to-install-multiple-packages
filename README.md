@@ -87,6 +87,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 * Database / FTP / Pass / Git
   * Beekeeper Studio (databases)
   * SSH Server
+  * SSH Putty 
   * Filezilla FTP
   * Keepass
   * Git
