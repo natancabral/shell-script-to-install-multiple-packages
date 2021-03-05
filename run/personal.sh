@@ -140,6 +140,10 @@ sudo snap install --classic beekeeper-studio
 echo -e "\n${Cyan} * SSH Server.. ${Color_Off}"
 sudo apt-get install openssh-server
 
+# SSH Putty
+echo -e "\n${Cyan} * SSH Putty.. ${Color_Off}"
+sudo apt-get install putty
+
 # Filezilla FTP
 echo -e "\n${Cyan} * FTP Filezilla.. ${Color_Off}"
 sudo apt-get -y install filezilla
