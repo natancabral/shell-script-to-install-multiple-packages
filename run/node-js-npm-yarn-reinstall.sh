@@ -79,6 +79,9 @@ function setup_n() {
 function setup_nodejs() {
   sudo n stable
   # node -v
+  # https://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu/21171188#21171188
+  sudo apt-get install nodejs-legacy
+  # ------------------------------
   sudo apt-get remove --purge -y nodejs
   sudo npm -g config set registry http://registry.npmjs.org/
   sudo chown -R $USER:$(id -gn $USER) ~/.config
