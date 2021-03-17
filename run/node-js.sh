@@ -80,7 +80,9 @@ installNodejs() {
   sudo apt install curl
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   echo -e "\n${Cyan} * Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
+  # https://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu/21171188#21171188
   sudo apt-get install nodejs-legacy
+  # ------------------------------
   sudo apt install nodejs -y 
   sudo apt install node -y 
   
