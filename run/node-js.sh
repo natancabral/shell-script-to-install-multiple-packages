@@ -72,6 +72,7 @@ installNvm() {
 
 installNodejs() {
 
+  
   # First, you'll need NodeJS and NPM:
   echo -e "\n${Cyan} * Run bash setup Node.js 12.x .. ${Color_Off}"
   echo -e "\n${Cyan} * https://github.com/nodesource/distributions/blob/master/README.md ${Color_Off}"  
@@ -79,6 +80,7 @@ installNodejs() {
   sudo apt install curl
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   echo -e "\n${Cyan} * Installing Node, Node.js, Node-red .. this will take a while .. ${Color_Off}"
+  sudo apt-get install nodejs-legacy
   sudo apt install nodejs -y 
   sudo apt install node -y 
   
