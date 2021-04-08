@@ -136,6 +136,10 @@ echo -e "\n${Yellow} * Database / FTP / Pass / Git ${Color_Off}"
 echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
 sudo snap install --classic beekeeper-studio
 
+# Mysql Workbench
+echo -e "\n${Cyan} * Mysql Workbench.. ${Color_Off}"
+sudo snap install mysql-workbench-community
+
 # SSH Server
 echo -e "\n${Cyan} * SSH Server.. ${Color_Off}"
 sudo apt-get install openssh-server
@@ -153,9 +157,12 @@ echo -e "\n${Cyan} * Install Keepass.. ${Color_Off}"
 sudo apt-get -y install keepassxc
 
 # Git
-echo -e ""
 echo -e "\n${Cyan} * Git ${Color_Off}"
 sudo apt-get -y install git
+
+# Postman API
+echo -e "\n${Cyan} * Postman API ${Color_Off}"
+sudo snap install postman
 
 # ---------------------------------------------------------------------------
 # System
