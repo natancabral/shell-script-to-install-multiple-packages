@@ -57,7 +57,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 ```bash
 $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
 ```
-Or try Node.js + NPM + Yarn reinstall
+Or Node.js + NVM + Yarn 
 ```bash
 $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
 ```
@@ -65,7 +65,6 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
 #### Install
 
 * Node.js
-* NPM
 * NVM
 * Yarn
 
