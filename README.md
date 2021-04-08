@@ -84,13 +84,15 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Snap
   * Yarn
   * gnome packages
-* Database / FTP / Pass / Git
+* Database / FTP / Pass / Git / API
   * Beekeeper Studio (databases)
+  * Mysql Workbench
   * SSH Server
   * SSH Putty 
   * Filezilla FTP
   * Keepass
   * Git
+  * Postman API
 * System
   * Faster Open Apps - Preload on RAM
   * Stacer
