@@ -1,8 +1,8 @@
 # Shell Script to Install Multiple Packages
 Easy to use Bash Script to Install components stack on **Debian distro / Ubuntu / Mint**. 
 
-* [LAMP (Apache, MySQL, PHP)](#lamp)
 * [Node.js](#nodejs)
+* [LAMP (Apache, MySQL, PHP)](#lamp)
 * [Personal](#personal)
 
 ----
@@ -16,6 +16,20 @@ $ su root # debian
 $ sudo su # ubuntu
 $ sudo apt-get install wget
 ```
+
+### Node.js
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+```bash
+$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
+```
+
+#### Install
+
+* Node.js
+* NVM
+* Yarn
+
+---
 
 ### LAMP
 Apache, MySQL, PHP (LAMP).
@@ -49,24 +63,6 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Start Apache server
   * Test Apache
   * Create and run sample PHP script file
-
----
-
-### Node.js
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-```bash
-$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js.sh | bash
-```
-Or Node.js + NVM + Yarn 
-```bash
-$ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-script-to-install-multiple-packages/main/run/node-js-npm-yarn-reinstall.sh | bash
-```
-
-#### Install
-
-* Node.js
-* NVM
-* Yarn
 
 ---
 
