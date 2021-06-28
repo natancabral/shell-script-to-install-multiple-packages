@@ -88,6 +88,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Keepass
   * Git
   * Postman API
+  * OneDrive
 * System
   * Faster Open Apps - Preload on RAM
   * Stacer
