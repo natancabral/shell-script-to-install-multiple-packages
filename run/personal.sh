@@ -164,6 +164,12 @@ sudo apt-get -y install git
 echo -e "\n${Cyan} * Postman API ${Color_Off}"
 sudo snap install postman
 
+# OneDrive
+echo -e "\n${Cyan} * OneDrive ${Color_Off}"
+sudo add-apt-repository ppa:yann1ck/onedrive
+sudo apt-get update
+sudo apt-get -y install onedrive
+
 # ---------------------------------------------------------------------------
 # System
 # ---------------------------------------------------------------------------
