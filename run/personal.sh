@@ -127,6 +127,10 @@ echo -e "\n${Green} * \$ gpk-application ${Color_Off}"
 sudo apt-get -y install gnome-packagekit
 # To open: gpk-application
 
+# GNOME control-center / lost settings
+echo -e "\n${Green} * \$ gnome-control-center ${Color_Off}"
+sudo apt-get -y install gnome-control-center
+
 # ---------------------------------------------------------------------------
 # Database / FTP / Pass / Git
 # ---------------------------------------------------------------------------
