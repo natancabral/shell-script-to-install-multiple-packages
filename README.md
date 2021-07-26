@@ -78,7 +78,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Flatpak
   * Snap
   * Yarn
-  * gnome packages
+  * gnome packages / restore gnome settings
 * Database / FTP / Pass / Git / API
   * Beekeeper Studio (databases)
   * Mysql Workbench
@@ -96,6 +96,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Unrar
   * Gnome Tweaks
   * Gnome Boxes Virtual Machine
+  * Font-Manager
 * Video
   * VLC
   * Vino Screen Share / Mirror
