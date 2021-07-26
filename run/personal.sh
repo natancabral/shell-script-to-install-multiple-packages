@@ -221,6 +221,10 @@ sudo apt-get -y install gnome-boxes
 # Virtual Box Machine
 # sudo apt-get install virtualbox
 
+# Font-Manager
+echo -e "\n${Cyan} * Font-Manager.. ${Color_Off}"
+sudo apt-get install -y font-manager
+
 # ---------------------------------------------------------------------------
 # Video
 # ---------------------------------------------------------------------------
