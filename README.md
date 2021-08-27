@@ -80,6 +80,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Yarn
   * gnome packages / restore gnome settings
 * Database / FTP / Pass / Git / API
+  * DBeaver Community Free Universal Database Tool
   * Beekeeper Studio (databases)
   * Mysql Workbench
   * SSH Server
