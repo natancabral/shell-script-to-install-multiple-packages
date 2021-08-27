@@ -136,6 +136,10 @@ sudo apt-get -y install gnome-control-center
 # ---------------------------------------------------------------------------
 echo -e "\n${Yellow} * Database / FTP / Pass / Git ${Color_Off}"
 
+# DBeaver Community Free Universal Database Tool
+echo -e "\n${Cyan} *  DBeaver Community Free Universal Database Tool.. ${Color_Off}"
+sudo snap install dbeaver-ce
+
 # Beekeeper Studio / DataBase
 echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
 sudo snap install --classic beekeeper-studio
