@@ -97,6 +97,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Unrar
   * Gnome Tweaks
   * Gnome Boxes Virtual Machine
+  * HDMI Sound Output
   * Font-Manager
 * Video
   * VLC
