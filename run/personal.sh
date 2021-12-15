@@ -225,6 +225,9 @@ sudo apt-get -y install gnome-boxes
 # Virtual Box Machine
 # sudo apt-get install virtualbox
 
+# HDMI Sound Output
+sudo apt-get install -y pavucontrol
+
 # Font-Manager
 echo -e "\n${Cyan} * Font-Manager.. ${Color_Off}"
 sudo apt-get install -y font-manager
