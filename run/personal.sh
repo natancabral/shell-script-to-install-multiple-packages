@@ -259,6 +259,10 @@ sudo snap install zoom-client
 # ---------------------------------------------------------------------------
 echo -e "\n${Yellow} * Text ${Color_Off}"
 
+# Tabby Terminal
+echo -e "\n${Cyan} * Tabby Terminal.. ${Color_Off}"
+sudo apt-get -y install tabby-terminal
+
 # Vim Text Editor
 echo -e "\n${Cyan} * Vim Text Editor.. ${Color_Off}"
 sudo apt-get -y install vim
