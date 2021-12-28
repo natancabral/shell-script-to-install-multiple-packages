@@ -105,6 +105,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * OBS Studio Stream Live
   * Zoom Meeting Client
 * Text
+  * Tabby Terminal
   * Vim Text Editor
   * Nano Text Editor
   * Standard Notes
