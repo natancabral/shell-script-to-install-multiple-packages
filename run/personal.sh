@@ -218,9 +218,9 @@ echo -e "\n${Cyan} * Gnome Boxes Virtual Machine.. ${Color_Off}"
 sudo apt-get -y install gnome-boxes
 # sudo flatpak install flathub org.gnome.Boxes
 # ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
-# $ sudo rm /var/lib/apt/lists/lock
-# $ sudo rm /var/cache/apt/archives/lock
-# $ sudo rm /var/lib/dpkg/lock
+# $ sudo rm -rf /var/lib/apt/lists/lock
+# $ sudo rm -rf /var/cache/apt/archives/lock
+# $ sudo rm -rf /var/lib/dpkg/lock
 
 # Virtual Box Machine
 # sudo apt-get install virtualbox
@@ -231,6 +231,10 @@ sudo apt-get install -y pavucontrol
 # Font-Manager
 echo -e "\n${Cyan} * Font-Manager.. ${Color_Off}"
 sudo apt-get install -y font-manager
+
+# Blanket - Improve focus and increase your productivity by listening to different sounds
+echo -e "\n${Cyan} * Blanket - Improve focus and increase your productivity by listening to different sounds.. ${Color_Off}"
+sudo flatpak install flathub com.rafaelmardojai.Blanket
 
 # ---------------------------------------------------------------------------
 # Video
