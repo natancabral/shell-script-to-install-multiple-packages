@@ -99,7 +99,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Gnome Boxes Virtual Machine
   * HDMI Sound Output
   * Font-Manager
-  * Blanket
+  * Blanket - Improve focus and increase your productivity by listening to different sounds
 * Video
   * VLC
   * Vino Screen Share / Mirror
