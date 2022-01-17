@@ -16,9 +16,11 @@ Cyan='\033[0;36m'         # Cyan
 
 # ---------------------------------[functions]----------------------------------
 
-# install zsh
 echo -e "\n${Blue} * Starting apt update... ${Color_Off}"
 sudo apt update
+
+echo -e "\n${Cyan} * Install Tabby Terminal.. ${Color_Off}"
+sudo apt-get -y install tabby-terminal
 
 echo -e "\n${Green} * Install ZSH ${Color_Off}"
 sudo apt install zsh
@@ -40,4 +42,3 @@ sudo nano ~/.bashrc
 echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
 sudo nano ~/.zshrc
 # eval "$(starship init zsh)"
-
