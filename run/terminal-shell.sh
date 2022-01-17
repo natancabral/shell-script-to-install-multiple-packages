@@ -34,7 +34,9 @@ echo -e "\n${Cyan} * Install Starship ${Color_Off}"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 echo -e "\n${Yellow} Open ~/.bashrc ${Color_Off}"
+echo -e "${Green} eval \"\$(starship init bash)\" ${Color_Off}"
 echo -e "${Yellow} Open ~/.zshrc ${Color_Off}"
+echo -e "${Green} eval \"\$(starship init zsh)\" ${Color_Off}"
 
 # echo -e "\n${Yellow} * starship init bash ${Color_Off}"
 # sudo nano ~/.bashrc
@@ -42,12 +44,3 @@ echo -e "${Yellow} Open ~/.zshrc ${Color_Off}"
 # echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
 # sudo nano ~/.zshrc
 # eval "$(starship init zsh)"
-
-read -p "Open .bashrc file? (y/n)" choice
-case "$choice" in 
-  y|Y ) 
-    nano ~/.bashrc;;
-  n|N ) 
-    echo "Ok. Change later \$ nano ~/.bashrc";;
-  * ) echo "invalid";;
-esac
