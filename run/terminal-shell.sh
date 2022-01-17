@@ -16,29 +16,29 @@ Cyan='\033[0;36m'         # Cyan
 
 # ---------------------------------[functions]----------------------------------
 
-echo -e "\n${Blue} * Starting apt update... ${Color_Off}"
+echo -e "\n${Cyan} * Starting apt update... ${Color_Off}"
 sudo apt update
 
 echo -e "\n${Cyan} * Install Tabby Terminal.. ${Color_Off}"
 sudo apt-get -y install tabby-terminal
 
-echo -e "\n${Green} * Install ZSH ${Color_Off}"
+echo -e "\n${Cyan} * Install ZSH ${Color_Off}"
 sudo apt install zsh
 chsh -s /bin/zsh
 echo -e "\n${Green} * Download settings ZSH ${Color_Off}"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo -e "\n${Green} * Install Starship ${Color_Off}"
+echo -e "\n${Cyan} * Install Starship ${Color_Off}"
 # https://github.com/starship/starship
 # https://starship.rs/
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 echo -e "\n${Yellow} Open ~/.bashrc ${Color_Off}"
-echo -e "\n${Yellow} Open ~/.zshrc ${Color_Off}"
+echo -e "${Yellow} Open ~/.zshrc ${Color_Off}"
 
-echo -e "\n${Yellow} * starship init bash ${Color_Off}"
-sudo nano ~/.bashrc
+# echo -e "\n${Yellow} * starship init bash ${Color_Off}"
+# sudo nano ~/.bashrc
 # eval "$(starship init bash)"
-echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
-sudo nano ~/.zshrc
+# echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
+# sudo nano ~/.zshrc
 # eval "$(starship init zsh)"
