@@ -42,3 +42,12 @@ echo -e "${Yellow} Open ~/.zshrc ${Color_Off}"
 # echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
 # sudo nano ~/.zshrc
 # eval "$(starship init zsh)"
+
+read -p "Open .bashrc file? (y/n)" choice
+case "$choice" in 
+  y|Y ) 
+    nano ~/.bashrc;;
+  n|N ) 
+    echo "Ok. Change later \$ nano ~/.bashrc";;
+  * ) echo "invalid";;
+esac
