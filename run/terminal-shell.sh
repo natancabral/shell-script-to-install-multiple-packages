@@ -31,9 +31,9 @@ echo -e "\n${Green} * Install Starship ${Color_Off}"
 # https://starship.rs/
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-echo -e "\n${Yellow} * e-val \"\$\(starship init bash\)\" ${Color_Off}"
+echo -e "\n${Yellow} * starship init bash ${Color_Off}"
 sudo nano ~/.bashrc
 # eval "$(starship init bash)"
-echo -e "\n${Yellow} * e-val \"\$\(starship init zsh\)\" ${Color_Off}"
-nano ~/.zshrc
+echo -e "\n${Yellow} * starship init zsh ${Color_Off}"
+sudo nano ~/.zshrc
 # eval "$(starship init zsh)"
