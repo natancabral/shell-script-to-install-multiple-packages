@@ -21,6 +21,8 @@ sudo apt update
 
 echo -e "\n${Cyan} * Install Tabby Terminal.. ${Color_Off}"
 sudo apt-get -y install tabby-terminal
+# Color Scheme: ayu
+$ Font: Libertion Mono 12
 
 echo -e "\n${Cyan} * Install ZSH ${Color_Off}"
 sudo apt install zsh
