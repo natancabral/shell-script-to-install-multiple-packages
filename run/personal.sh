@@ -92,7 +92,7 @@ Cyan='\033[0;36m'         # Cyan
 # https://www.tutorialspoint.com/unix/case-esac-statement.htm
 
 # Update
-echo -e "${Purple} * Updating package repositories...${Color_Off}"
+echo -e "${Purple} * Updating package repositories ${Color_Off}"
 sudo apt-get -qq update 
 
 # ---------------------------------------------------------------------------
@@ -109,7 +109,7 @@ echo -e "\n${Cyan} * cUrl ${Color_Off}"
 sudo apt-get -y install curl
 
 # Flatpak - Package Manager
-echo -e "\n${Cyan} * Flatpak.. ${Color_Off}"
+echo -e "\n${Cyan} * Flatpak ${Color_Off}"
 sudo add-apt-repository ppa:flatpak/stable
 sudo apt update
 sudo apt -y install flatpak
@@ -141,31 +141,31 @@ sudo apt-get -y install gnome-control-center
 echo -e "\n${Yellow} * Database / FTP / Pass / Git ${Color_Off}"
 
 # DBeaver Community Free Universal Database Tool
-echo -e "\n${Cyan} *  DBeaver Community Free Universal Database Tool.. ${Color_Off}"
+echo -e "\n${Cyan} *  DBeaver Community Free Universal Database Tool ${Color_Off}"
 sudo snap install dbeaver-ce
 
 # Beekeeper Studio / DataBase
-echo -e "\n${Cyan} * Beekeeper Studio / DataBase.. ${Color_Off}"
+echo -e "\n${Cyan} * Beekeeper Studio / DataBase ${Color_Off}"
 sudo snap install --classic beekeeper-studio
 
 # Mysql Workbench
-echo -e "\n${Cyan} * Mysql Workbench.. ${Color_Off}"
+echo -e "\n${Cyan} * Mysql Workbench ${Color_Off}"
 sudo snap install mysql-workbench-community
 
 # SSH Server
-echo -e "\n${Cyan} * SSH Server.. ${Color_Off}"
+echo -e "\n${Cyan} * SSH Server ${Color_Off}"
 sudo apt-get install openssh-server
 
 # SSH Putty
-echo -e "\n${Cyan} * SSH Putty.. ${Color_Off}"
+echo -e "\n${Cyan} * SSH Putty ${Color_Off}"
 sudo apt-get install putty
 
 # Filezilla FTP
-echo -e "\n${Cyan} * FTP Filezilla.. ${Color_Off}"
+echo -e "\n${Cyan} * FTP Filezilla ${Color_Off}"
 sudo apt-get -y install filezilla
 
 # Keepass
-echo -e "\n${Cyan} * Install Keepass.. ${Color_Off}"
+echo -e "\n${Cyan} * Install Keepass ${Color_Off}"
 sudo apt-get -y install keepassxc
 
 # Git
@@ -192,18 +192,18 @@ echo -e "\n${Cyan} * Preload ${Color_Off}"
 sudo apt-get -y install preload
 
 # Stacer
-echo -e "\n${Cyan} * Stacer.. ${Color_Off}"
+echo -e "\n${Cyan} * Stacer ${Color_Off}"
 sudo apt-get -y install stacer
 
 # Htop Memory
-echo -e "\n${Cyan} * Htop Memory.. ${Color_Off}"
+echo -e "\n${Cyan} * Htop Memory ${Color_Off}"
 echo -e "${Green} \$ htop ${Color_Off}"
 echo -e "\n${Cyan} * Full data cpu/memory ${Color_Off}"
 echo -e "${Green} \$ lshw ${Color_Off}"
 sudo apt-get -y install htop
 
 # Unrar
-echo -e "\n${Cyan} * Unrar.. ${Color_Off}"
+echo -e "\n${Cyan} * Unrar ${Color_Off}"
 sudo apt-get -y install unrar
 # unrar e filename.rar
 # unrar e filename.rar /home/
@@ -214,11 +214,11 @@ sudo apt-get -y install unrar
 # l[t[a],b] : List archive contents [technical[all], bare]
 
 # gnome-tweaks
-echo -e "\n${Cyan} * Gnome Tweaks.. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Tweaks ${Color_Off}"
 sudo apt-get install -y gnome-tweaks 
 
 # Gnome Boxes Virtual Machine
-echo -e "\n${Cyan} * Gnome Boxes Virtual Machine.. ${Color_Off}"
+echo -e "\n${Cyan} * Gnome Boxes Virtual Machine ${Color_Off}"
 sudo apt-get -y install gnome-boxes
 # sudo flatpak install flathub org.gnome.Boxes
 # ***Note: At the time of installation, if any error occurs like the message : “Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?”, then run the following commands to solve this problem.
@@ -233,12 +233,16 @@ sudo apt-get -y install gnome-boxes
 sudo apt-get install -y pavucontrol
 
 # Font-Manager
-echo -e "\n${Cyan} * Font-Manager.. ${Color_Off}"
+echo -e "\n${Cyan} * Font-Manager ${Color_Off}"
 sudo apt-get install -y font-manager
 
 # Blanket - Improve focus and increase your productivity by listening to different sounds
-echo -e "\n${Cyan} * Blanket - Improve focus and increase your productivity by listening to different sounds.. ${Color_Off}"
+echo -e "\n${Cyan} * Blanket - Improve focus and increase your productivity by listening to different sounds ${Color_Off}"
 sudo flatpak install flathub com.rafaelmardojai.Blanket
+
+# Gabutdm - Download Manager
+echo -e "\n${Cyan} * Gabutdm - Download Manager ${Color_Off}"
+sudo snap install gabutdm
 
 # ---------------------------------------------------------------------------
 # Video
@@ -246,16 +250,16 @@ sudo flatpak install flathub com.rafaelmardojai.Blanket
 echo -e "\n${Yellow} * Video ${Color_Off}"
 
 # VLC
-echo -e "\n${Cyan} * VLC.. ${Color_Off}"
+echo -e "\n${Cyan} * VLC ${Color_Off}"
 sudo apt-get -y install vlc
 
 # Vino Screen Share / Mirror
-echo -e "\n${Cyan} * Vino Screen Share / Mirror.. ${Color_Off}"
+echo -e "\n${Cyan} * Vino Screen Share / Mirror ${Color_Off}"
 echo -e "${Green}   * Enter Settings > Sharing ${Color_Off}"
 sudo apt-get -y install vino
 
 # OBS Studio Stream Live
-echo -e "\n${Cyan} * OBS Studio Stream Live.. ${Color_Off}"
+echo -e "\n${Cyan} * OBS Studio Stream Live ${Color_Off}"
 sudo apt-get -y install obs-studio
 
 # Zoom Client Meeting
@@ -268,36 +272,36 @@ sudo snap install zoom-client
 echo -e "\n${Yellow} * Text ${Color_Off}"
 
 # Tabby Terminal
-echo -e "\n${Cyan} * Tabby Terminal.. ${Color_Off}"
+echo -e "\n${Cyan} * Tabby Terminal ${Color_Off}"
 sudo apt-get -y install tabby-terminal
 
 # Vim Text Editor
-echo -e "\n${Cyan} * Vim Text Editor.. ${Color_Off}"
+echo -e "\n${Cyan} * Vim Text Editor ${Color_Off}"
 sudo apt-get -y install vim
 
 # Nano Text Editor
-echo -e "\n${Cyan} * Nano Text Editor.. ${Color_Off}"
+echo -e "\n${Cyan} * Nano Text Editor ${Color_Off}"
 sudo apt-get -y install nano
 
 # Standard Notes
 echo -e "\n${Cyan} * Standard Notes ${Color_Off}"
-sudo snap install --classic --echo -e "${Cyan} Flatpak.. ${Color_Off}"
+sudo snap install --classic --echo -e "${Cyan} Flatpak ${Color_Off}"
 
 # MS Visual Code
-echo -e "\n${Cyan} * Init Install Visual Code... ${Color_Off}"
+echo -e "\n${Cyan} * Init Install Visual Code ${Color_Off}"
 sudo apt-get install software-properties-common apt-transport-https wget -y 
-echo -e "${Green}   * Download Code Key.. ${Color_Off}"
+echo -e "${Green}   * Download Code Key ${Color_Off}"
 # import the Microsoft GPG key using the following
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-echo -e "${Green}   * Download Repository Code.. ${Color_Off}"
+echo -e "${Green}   * Download Repository Code ${Color_Off}"
 # enable the Visual Studio Code repository by typing: 
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt-get update
 echo -e "${Cyan} * Install Code Try (1) ${Color_Off}"
 sudo apt-get -y install code
 # Or
-echo -e "${Cyan} * Install Code Try (2) ${Color_Off}"
-sudo snap install --classic code  # or code-insiders
+# echo -e "${Cyan} * Install Code Try (2) ${Color_Off}"
+# sudo snap install --classic code  # or code-insiders
 # Or
 # Download .deb
 # https://code.visualstudio.com/Download
