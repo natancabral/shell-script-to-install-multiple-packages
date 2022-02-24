@@ -287,9 +287,17 @@ sudo apt-get -y install tabby-terminal
 echo -e "\n${Cyan} * Hyper Terminal ${Color_Off}"
 sudo apt-get -y install hyper
 
-# Oh my ZSH
-echo -e "\n${Cyan} * Oh my ZSH ${Color_Off}"
+# Shell Terminal - Oh my ZSH
+echo -e "\n${Cyan} * Shell Terminal - Oh my ZSH ${Color_Off}"
+echo -e "\n${Yellow}   * https://ohmyz.sh/#install ${Color_Off}"
 sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Shell Terminal - Startship
+echo -e "\n${Cyan} * Shell Terminal - Startship ${Color_Off}"
+echo -e "\n${Yellow}   * https://starship.rs/ ${Color_Off}"
+sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+
 
 # Standard Notes
 echo -e "\n${Cyan} * Standard Notes ${Color_Off}"
@@ -318,8 +326,8 @@ sudo apt-get -y install code
 echo -e "\n${Yellow} * APT : update / ugrade / fix-broken / autoremove / autoclean ${Color_Off}"
 
 # Final
-# sudo apt-get upgrade 
 sudo apt-get update
+sudo apt-get upgrade 
 sudo apt-get --fix-broken install --yes
 # Remove installed old files 
 sudo apt-get autoremove
