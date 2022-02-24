@@ -229,7 +229,7 @@ sudo apt-get -y install gnome-boxes
 # Virtual Box Machine
 # sudo apt-get install virtualbox
 
-# HDMI Sound Output
+# PulseAudio - HDMI Sound Output
 sudo apt-get install -y pavucontrol
 
 # Font-Manager
@@ -271,10 +271,6 @@ sudo snap install zoom-client
 # ---------------------------------------------------------------------------
 echo -e "\n${Yellow} * Text ${Color_Off}"
 
-# Tabby Terminal
-echo -e "\n${Cyan} * Tabby Terminal ${Color_Off}"
-sudo apt-get -y install tabby-terminal
-
 # Vim Text Editor
 echo -e "\n${Cyan} * Vim Text Editor ${Color_Off}"
 sudo apt-get -y install vim
@@ -282,6 +278,18 @@ sudo apt-get -y install vim
 # Nano Text Editor
 echo -e "\n${Cyan} * Nano Text Editor ${Color_Off}"
 sudo apt-get -y install nano
+
+# Tabby Terminal
+echo -e "\n${Cyan} * Tabby Terminal ${Color_Off}"
+sudo apt-get -y install tabby-terminal
+
+# Hyper Terminal
+echo -e "\n${Cyan} * Hyper Terminal ${Color_Off}"
+sudo apt-get -y install hyper
+
+# Oh my ZSH
+echo -e "\n${Cyan} * Oh my ZSH ${Color_Off}"
+sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Standard Notes
 echo -e "\n${Cyan} * Standard Notes ${Color_Off}"
