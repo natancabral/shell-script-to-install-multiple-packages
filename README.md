@@ -110,8 +110,9 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Vim Text Editor
   * Nano Text Editor
   * Tabby Terminal
-  * Oh my ZSH
   * Hyper Terminal
+  * Shell Terminal - Oh my ZSH
+  * Shell Terminal - StartShip
   * Standard Notes
   * MS Visual Code
   
