@@ -97,7 +97,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Unrar
   * Gnome Tweaks
   * Gnome Boxes Virtual Machine
-  * HDMI Sound Output
+  * PulseAudio - HDMI Sound Output
   * Font-Manager
   * Blanket - Improve focus and increase your productivity by listening to different sounds
   * Gabutdm - Download Manager
@@ -107,13 +107,14 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * OBS Studio Stream Live
   * Zoom Meeting Client
 * Text
-  * Tabby Terminal
   * Vim Text Editor
   * Nano Text Editor
+  * Tabby Terminal
+  * Oh my ZSH
+  * Hyper Terminal
   * Standard Notes
   * MS Visual Code
   
-
 ---
 
 ## ToDo
