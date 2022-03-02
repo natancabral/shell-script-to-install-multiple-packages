@@ -101,6 +101,7 @@ $ sudo wget --no-cache -O - https://raw.githubusercontent.com/natancabral/shell-
   * Font-Manager
   * Blanket - Improve focus and increase your productivity by listening to different sounds
   * Gabutdm - Download Manager
+  * Timeshift - Backup
 * Video
   * VLC
   * Vino Screen Share / Mirror
