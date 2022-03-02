@@ -244,6 +244,12 @@ sudo flatpak install flathub com.rafaelmardojai.Blanket
 echo -e "\n${Cyan} * Gabutdm - Download Manager ${Color_Off}"
 sudo snap install gabutdm
 
+# Timeshift - Backup
+echo -e "\n${Cyan} * Timeshift - Backup ${Color_Off}"
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install -y timeshift
+ 
 # ---------------------------------------------------------------------------
 # Video
 # ---------------------------------------------------------------------------
